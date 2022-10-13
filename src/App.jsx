@@ -1,14 +1,13 @@
 import React from 'react'
+import Header from './components/Header'
 
 function App() {
 
   return (
-    <div>
-     Sobreviver
-    </div>
+    <>
+      <Header/>
+    </>
   )
 }
-
-// font-family:'Poppins', sans-serif;
 
 export default App

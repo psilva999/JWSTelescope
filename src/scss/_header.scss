@@ -1,0 +1,112 @@
+@import 'config';
+
+header {
+  background:$header-gradient;
+  justify-content:center;
+  top:2rem;
+  padding:.7rem 1rem;
+
+  .logo {
+    width:8rem;
+  }
+
+  li {
+    cursor:pointer;
+    padding:.2rem;
+    transition:.2s;
+
+    &:nth-child(2) {
+      padding-bottom:.3rem;
+    }
+
+    &:nth-child(2):after, &:nth-child(2):hover:after {
+      width:0%;
+      height:0%;
+    } 
+
+    &:after {
+      content:'';
+      display:block;
+      margin:left;
+      width:0%;
+      height:.12rem;
+      margin-top:0rem;
+      transition:.2s;
+      opacity:1;
+      background:$main-white;
+    }
+
+    &:hover:after, &.active:after {
+      width:100%;
+    }
+
+    img {
+      margin:.2rem auto auto .1rem;
+      width:1.2rem;
+    }
+  }
+
+  .toggle-menu {
+    display:none;
+  }
+
+  nav, ul, div, li:nth-child(2) {
+    display:flex;
+    align-items:center;
+  }
+
+  ul, div {
+    justify-content:center;
+  }
+
+  gap:18.3rem;
+
+  nav {
+    justify-content:space-between;
+    gap:20rem;
+    margin:right;
+
+    ul {
+      gap:1.7rem;
+      list-style:none;
+    }
+
+    div {
+      gap:1.8rem;
+      width:max-content;
+
+      button {
+        font-size:1rem;
+        font-weight:400;
+
+        &:first-child {
+          &:after {
+            content:'';
+            display:block;
+            margin:left;
+            width:0%;
+            height:.12rem;
+            margin-top:0rem;
+            transition:.2s;
+            opacity:1;
+            background:$main-white;
+          }
+        
+          &:hover:after, &.active:after {
+            width:100%;
+          }
+        }
+
+        &:last-child {
+          border-radius:.2rem;
+          background:$main-white;
+          color:$main-black;
+          padding:.1rem .6rem .17rem .6rem;
+          transition:.2s;
+          border:.1rem solid $main-white;
+        }
+      }
+    }
+
+  }
+}

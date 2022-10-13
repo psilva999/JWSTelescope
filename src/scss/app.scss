@@ -1,0 +1,26 @@
+@import 'config';
+
+* {
+  margin:0;
+  border:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:$poppins-all-styles;
+  color:$main-white;
+}
+
+body {
+  background:$main-black;
+  overflow-x:hidden;
+  overflow-y:auto;
+  display:grid;
+  place-items:center;
+
+  button {
+    background:none;
+    cursor:pointer;
+  }
+}
+
+@import 'infos';
+@import 'header';

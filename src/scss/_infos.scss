@@ -1,0 +1,79 @@
+@import 'config';
+
+.infos-languages, .infos-languages article:first-child, .infos-languages article:first-child div, .infos-languages article:first-child button, header, .infos-languages article:last-child {
+  display:flex;
+  align-items:center;
+}
+
+.infos-languages, header {
+  width:100vw;
+  position:absolute;
+  left:0;
+}
+
+.infos-languages {
+  justify-content:center;
+  gap:40.3rem;
+  background:$normal-black;
+  top:0;
+  height:2rem;
+  padding:.5rem 0rem;
+  align-items:center baseline;
+
+  p, button {
+    font-size:.7rem;
+  }
+
+  article:first-child {
+    align-items:center;
+    gap:9rem;
+    opacity:.8;
+
+    div, button {
+      gap:.2rem;
+    }
+
+    button {
+      img:last-child {
+        position:relative;
+        left:.1rem;
+        top:.05rem;
+      }
+    }
+  }
+
+  article:last-child {
+    gap:.7rem;
+    margin-top:.4rem;
+
+    button {
+      opacity:.6;
+      transition:.2s;
+
+      &:hover {
+        transition:.2s;
+      }
+
+      &.active, &:hover {
+        opacity:1;
+      }
+
+      &:after {
+        content:'';
+        display:block;
+        margin:left;
+        margin-top:.3rem;
+        width:0%;
+        height:.07rem;
+        background:$main-white;
+        transition:.2s;
+        opacity:.8;
+      }
+
+      &:hover:after, &.active:after {
+        width:100%;
+      }
+    }
+
+  }
+}
