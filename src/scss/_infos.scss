@@ -9,11 +9,12 @@
   width:100vw;
   position:absolute;
   left:0;
+  z-index:3;
 }
 
 .infos-languages {
   justify-content:center;
-  gap:40.3rem;
+  gap:37.6rem;
   background:$normal-black;
   top:0;
   height:2rem;
@@ -26,7 +27,9 @@
 
   article:first-child {
     align-items:center;
-    gap:9rem;
+    justify-content:space-between;
+    width:38.7rem;
+    margin-left:-1.1rem;
     opacity:.8;
 
     div, button {
@@ -37,13 +40,13 @@
       img:last-child {
         position:relative;
         left:.1rem;
-        top:.05rem;
+        top:.08rem;
       }
     }
   }
 
   article:last-child {
-    gap:.7rem;
+    gap:.6rem;
     margin-top:.4rem;
 
     button {

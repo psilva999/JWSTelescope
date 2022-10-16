@@ -4,10 +4,14 @@ header {
   background:$header-gradient;
   justify-content:center;
   top:2rem;
-  padding:.7rem 1rem;
+  padding:.6rem 1rem;
 
   .logo {
-    width:8rem;
+    width:7rem;
+  }
+
+  li, button {
+    font-size:.9rem;
   }
 
   li {
@@ -41,8 +45,9 @@ header {
     }
 
     img {
-      margin:.2rem auto auto .1rem;
-      width:1.2rem;
+      margin:.1rem auto auto .1rem;
+      width:1.1rem;
+      margin-left:-0rem;
     }
   }
 
@@ -59,27 +64,31 @@ header {
     justify-content:center;
   }
 
-  gap:18.3rem;
+  div {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:81.25rem;
+    margin-left:-1rem;
+  }
 
   nav {
     justify-content:space-between;
-    gap:20rem;
-    margin:right;
+    width:52.5rem;
 
     ul {
-      gap:1.7rem;
+      gap:1rem;
       list-style:none;
     }
 
     div {
-      gap:1.8rem;
+      gap:1rem;
       width:max-content;
 
       button {
-        font-size:1rem;
-        font-weight:400;
-
         &:first-child {
+          font-weight:400;
+
           &:after {
             content:'';
             display:block;
@@ -98,10 +107,11 @@ header {
         }
 
         &:last-child {
+          font-weight:500;
           border-radius:.2rem;
           background:$main-white;
           color:$main-black;
-          padding:.1rem .6rem .17rem .6rem;
+          padding:.1rem .75rem .17rem .75rem;
           transition:.2s;
           border:.1rem solid $main-white;
         }

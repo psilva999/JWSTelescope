@@ -1,0 +1,61 @@
+@import 'config';
+
+@keyframes show-container {
+  from {
+    opacity:0;
+    transform:translateY(-2rem);
+  }
+
+  to {
+    opacity:1;
+    transform:translateY(0rem);
+  }
+}
+
+@keyframes blur-effect {
+  0% {
+    filter:blur(0px);
+  }
+
+  50% {
+    filter:blur(2px);
+  }
+
+  100% {
+    filter:blur(0px);
+  }
+}
+
+@keyframes scroll-f-child {
+  0% {
+    margin-top:0rem;
+    opacity:1;
+  }
+
+  50% {
+    opacity:.5;
+    margin-top:.5rem;
+  }
+
+  100% {
+    opacity:1;
+    margin-top:0rem;
+  }
+}
+
+@keyframes scroll-l-child {
+  0% {
+    margin-top:-2.9rem;
+    opacity:1;
+  }
+
+  50% {
+    opacity:.2;
+    margin-top:-2.4rem;
+  }
+
+  100% {
+    opacity:1;
+    margin-top:-2.9rem;
+  }
+}

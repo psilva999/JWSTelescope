@@ -19,8 +19,45 @@ body {
   button {
     background:none;
     cursor:pointer;
+
+    &:focus {
+      outline:none;
+    }
+
+    &.more {
+      border:.07rem solid $main-white;
+      padding:.45rem 1.25rem .38rem 1.25rem;
+      font-weight:500;
+      letter-spacing:.08rem;
+      border-radius:.1rem;
+      margin-left:-1rem;
+      margin-top:.8rem;
+      font-size:.9rem;
+      background:$main-white;
+      color:$main-black;
+    }
+  }
+
+  main {
+    display:grid;
+    place-items:center;
+    width:100vw;
+
+    section {
+      padding:6rem 0 6rem 0;
+
+      &, & article {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        align-items:center;
+      }
+    }
+
   }
 }
 
 @import 'infos';
 @import 'header';
+
+@import 'home';
