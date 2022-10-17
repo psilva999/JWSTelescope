@@ -6,6 +6,10 @@ import Advantages from './Home/Advantages'
 
 import Faq from './Home/Faq'
 import Stories from './Home/Stories'
+import Dados from './Home/Dados'
+
+import SlideHome from './Home/SlideHome'
+import Contact from './Home/Contact'
 
 const Home = () => {
   return (
@@ -31,6 +35,10 @@ const Home = () => {
 
       <Faq/>
       <Stories/>
+      <Dados/>
+
+      <SlideHome/>
+      <Contact/>
     </>
 
   )
