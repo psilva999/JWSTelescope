@@ -6,7 +6,7 @@ import WhiteArrowDown from '../../assets/svg/1-header/2-white-arrow-down.svg'
 
 const Infos = () => {
   return (
-    <section className='infos-languages'>
+    <section className='infos-languages' id='top'>
 
       <article>
         <div>

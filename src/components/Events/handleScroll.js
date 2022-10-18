@@ -8,3 +8,18 @@ export function changeImage() {
 
   else background.src = Jws
 }
+
+export function handleTop() {
+  const scrollTop = document.querySelector('.volta-pro-topo'),
+        subscribe = document.querySelector(".subscribe")
+
+  if (window.scrollY === 0) {
+    scrollTop.classList.remove('active')
+    subscribe.classList.remove("active")
+  }
+
+  else if (window.scrollY >= 420 && !scrollTop.classList.contains("active") && !subscribe.classList.contains("active")) {
+    scrollTop.classList.add('active')
+    subscribe.classList.add("active")
+  }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import Jws from '../assets/imgs/1-home/1-background-jws.jpg'
 
 import Intro from './Home/Intro'
@@ -22,10 +23,18 @@ const Home = () => {
 
           <span>Confira os avanços e descobertas que o JWS realizou até o momento</span>
 
-          <button>
-            <div></div>
-            <div></div>
-          </button>
+          <Link activeClass="active"
+            to='intro'
+            spy={ true }
+            smooth={ true }
+            offset={ 40 }
+            duration={ 600 }
+            className='link-scroll'>
+              <button>
+                <div></div>
+                <div></div>
+              </button>
+          </Link>
 
         </article>
       </section>

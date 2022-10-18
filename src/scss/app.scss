@@ -5,7 +5,6 @@
   border:0;
   padding:0;
   box-sizing:border-box;
-  font-family:$poppins-all-styles;
   color:$main-white;
 }
 
@@ -23,19 +22,6 @@ body {
     &:focus {
       outline:none;
     }
-
-    &.more {
-      border:.07rem solid $main-white;
-      padding:.45rem 1.25rem .38rem 1.25rem;
-      font-weight:500;
-      letter-spacing:.08rem;
-      border-radius:.1rem;
-      margin-left:-1rem;
-      margin-top:.8rem;
-      font-size:.9rem;
-      background:$main-white;
-      color:$main-black;
-    }
   }
 
   main {
@@ -52,8 +38,43 @@ body {
         justify-content:center;
         align-items:center;
       }
+
+    }
+  }
+
+  .volta-pro-topo, .share, .subscribe {
+    display:none;
+
+    &.active {
+      background:$main-black;
+      padding:.3rem .3rem 0rem .3rem;
+      border-radius:.2rem;
+      position:fixed;
+      display:block;
+      cursor:pointer;
+      animation:show-button .2s linear forwards;
+      bottom:2rem;
+      opacity:.8;
+      transition:.2s;
     }
 
+    &:hover {
+      opacity:1;
+      transition:.2s;
+    }
+
+    img {
+      width:1.5rem;
+    }
+  }
+
+  .volta-pro-topo {
+    right:1.5rem;
+  }
+
+  .subscribe {
+    right:4.1rem;
+    width:2.5rem;
   }
 }
 
@@ -61,4 +82,5 @@ body {
 @import 'header';
 
 @import 'home';
+@import 'button';
 @import 'footer';
