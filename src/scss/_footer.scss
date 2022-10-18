@@ -1,0 +1,89 @@
+@import 'config';
+
+footer {
+  width:100vw;
+  background:$normal-black;
+  display:grid;
+  gap:9rem;
+  padding:6rem 0 5rem 0;
+
+  .logo-footer {
+    height:6rem;
+    margin-top:-1.4rem;
+  }
+
+  article {
+    display:flex;
+    justify-content:space-between;
+    width:80rem;
+    margin:auto;
+    align-items:top;
+    flex-wrap:nowrap;
+    color:$main-white;
+
+    &:last-child {
+      width:75rem;
+      align-items:center;
+
+      img {
+        width:6rem;
+      }
+
+      .space-x {
+        height: 3rem;
+        width: 12rem;
+      }
+    }
+
+    dt {
+      dd {
+        opacity:.8;
+
+        &:first-child {
+          font-weight:bolder;
+          opacity:1;
+        }
+      }
+    }
+
+    dl, ul {
+      font-size:.9rem;
+      display:grid;
+      gap:.7rem;
+    }
+
+    a {
+      text-decoration:none;
+      opacity:.8;
+      transition:.2s;
+
+      &:hover {
+        transition:.2s;
+        opacity:1;
+      }
+    }
+
+    ul {
+      display:grid;
+      gap:1rem;
+    }
+
+    .redes {
+      display:flex;
+      align-items:center;
+      gap:.5rem;
+      margin-top:1rem;
+    }
+
+    h1 {
+      width:18rem;
+      font-size:1rem;
+      font-weight:500;
+    }
+
+    p {
+      opacity:.8;
+      font-size:.8rem;
+    }
+  }
+}
