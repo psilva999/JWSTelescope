@@ -10,7 +10,6 @@ main {
     width:100vw;
     height:100vh;
     object-fit:cover;
-    animation:blur-effect .8s linear forwards;
   }
 
   .presentation {
@@ -20,7 +19,7 @@ main {
     text-align:center;
 
     article {
-      margin-top:12vh;
+      margin-top:5vh;
       gap:1.7rem;
       width:34rem;
     }
@@ -107,7 +106,6 @@ main {
   }
 
   .vantagens {
-
     h1 {
       font-weight:500;
 
@@ -178,7 +176,7 @@ main {
       align-items:center;
       gap:.7rem;
       margin-left:2.5rem;
-      
+
       h2 {
         font-size:1.7rem;
         font-weight:500;
@@ -197,13 +195,14 @@ main {
       }
 
       img {
-        transform:rotate(0deg);
+        animation:initial-deg .2s linear forwards;
+        width:1.2rem;
       }
 
       &.active {
 
         img {
-          transform:rotate(180deg);
+          animation:final-deg .2s linear forwards;
         }
       }
     }
@@ -215,10 +214,10 @@ main {
       margin-left:4rem;
       font-size:1.2rem;
       overflow:hidden;
-      height:0rem;
+      animation:hide-content .3s linear forwards;
 
       &.active {
-        height:max-content;
+        animation:show-content .3s linear forwards;
       }
 
       p {
@@ -364,6 +363,7 @@ main {
     div {
       gap:.5rem;
       justify-content:center;
+      margin-left:-1rem;
 
       img {
         width:2.5rem;

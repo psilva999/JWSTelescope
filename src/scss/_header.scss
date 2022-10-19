@@ -1,13 +1,22 @@
 @import 'config';
 
 header {
-  background:$header-gradient;
+  background:$header-absolute;
   justify-content:center;
   top:2rem;
   padding:.6rem 1rem;
+  position:absolute;
+  animation:large-header .1s linear forwards;
+  
+  &.fixed {
+    position:fixed;
+    background:$header-fixed;
+    top:0rem;
+    padding:.4rem 1rem;
+  }
 
   .logo {
-    width:7rem;
+    animation:large-logo .2s linear forwards;
   }
 
   li, button {

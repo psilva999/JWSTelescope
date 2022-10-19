@@ -21,20 +21,6 @@ footer {
     flex-wrap:nowrap;
     color:$main-white;
 
-    &:last-child {
-      width:75rem;
-      align-items:center;
-
-      img {
-        width:6rem;
-      }
-
-      .space-x {
-        height: 3rem;
-        width: 12rem;
-      }
-    }
-
     dt {
       dd {
         opacity:.8;
@@ -71,8 +57,8 @@ footer {
     .redes {
       display:flex;
       align-items:center;
-      gap:.5rem;
-      margin-top:1rem;
+      gap:.6rem;
+      margin-top:.8rem;
     }
 
     h1 {
@@ -84,6 +70,8 @@ footer {
     p {
       opacity:.8;
       font-size:.8rem;
+      font-weight:300;
+      margin-top:.3rem;
     }
   }
 }

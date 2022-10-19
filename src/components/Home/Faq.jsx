@@ -12,18 +12,18 @@ const Faq = () => {
       <h1>Perguntas frequentes</h1>
 
       <dl>
-        <dt className='active'>
+        <dt className='medidas active'>
           <h2>Quais são as medidas do JWST?</h2>
           <img src={ Faqs }/>
         </dt>
         <dd className='active'>
           <p>
-            Pouco mais de 6 metros de diâmetro e 6 kg.
+            Pouco mais de 6 metros de diâmetro e 6 toneladas.
           </p>
           <img src={ Medidas }/>
         </dd>
 
-        <dt id='margin'>
+        <dt id='margin' className='location'>
           <h2>Em que ponto do espaço o telescópio está localizado?</h2>
           <img src={ Faqs }/>
         </dt>
@@ -34,7 +34,7 @@ const Faq = () => {
           <img src={ Location }/>
         </dd>
 
-        <dt id='margin'>
+        <dt id='margin' className='launch'>
           <h2>Quando foi lançado?</h2>
           <img src={ Faqs }/>
         </dt>

@@ -27,7 +27,7 @@ const Home = () => {
             to='intro'
             spy={ true }
             smooth={ true }
-            offset={ 40 }
+            offset={ 10 }
             duration={ 600 }
             className='link-scroll'>
               <button>

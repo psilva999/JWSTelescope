@@ -9,7 +9,7 @@ const Header = () => {
     <>
       <Infos/>
 
-      <header>
+      <header className='header-fixo'>
         <div>
           <img src={ Logo } className='logo'/>
 

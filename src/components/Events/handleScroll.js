@@ -23,3 +23,47 @@ export function handleTop() {
     subscribe.classList.add("active")
   }
 }
+
+export function handleHeader() {
+  const header = document.querySelector('.header-fixo'),
+        logo = document.querySelector(".header-fixo .logo")
+
+  if (window.scrollY >= 34) {
+    if (!header.classList.contains("fixed")) {
+
+      let handleMenu = setInterval(hideMenu, 1000),
+          tempo = 3
+
+      header.classList.add('fixed')
+      header.classList.add("journey")
+
+      header.style.animation = 'small-header .1s linear forwards'
+      logo.style.animation = 'small-logo .3s linear forwards'
+
+      function hideMenu() {
+        tempo--
+
+        if (tempo === 0) {
+          if (header.classList.contains('fixed')) {
+            header.style.animation = 'hide-header .6s linear forwards'
+          }
+          
+          header.classList.add("handle-menu")
+          header.classList.remove("journey")
+
+          clearInterval(handleMenu)
+        }
+      }
+
+    }
+  }
+
+  else {
+    header.classList.remove('fixed')
+    header.classList.remove('journey')
+    header.classList.remove('handle-menu')
+
+    header.style.animation = 'large-header .1s linear forwards'
+    logo.style.animation = 'large-logo .2s linear forwards'
+  }
+}

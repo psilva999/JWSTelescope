@@ -12,20 +12,6 @@
   }
 }
 
-@keyframes blur-effect {
-  0% {
-    filter:blur(0px);
-  }
-
-  50% {
-    filter:blur(2px);
-  }
-
-  100% {
-    filter:blur(0px);
-  }
-}
-
 @keyframes scroll-f-child {
   0% {
     margin-top:0rem;
@@ -67,5 +53,113 @@
 
   to {
     transform:translateY(0rem);
+  }
+}
+
+@keyframes initial-deg {
+  from {
+    transform:rotate(180deg);
+  }
+
+  to {
+    transform:rotate(0deg);
+  }
+}
+
+@keyframes final-deg {
+  from {
+    transform:rotate(0deg);
+  }
+
+  to {
+    transform:rotate(180deg);
+  }
+}
+
+@keyframes hide-content {
+  from {
+    max-height:23.9rem;
+  }
+
+  to {
+    max-height:0rem;
+  }
+}
+
+@keyframes show-content {
+  from {
+    max-height:0rem;
+  }
+
+  to {
+    max-height:23.9rem;
+  }
+}
+
+@keyframes small-header {
+  from {
+    padding:.6rem 1rem;
+  }
+
+  to {
+    padding:.4rem 1rem;
+  }
+}
+
+@keyframes small-logo {
+  from {
+    width:7rem;
+    height:3rem;
+    margin-left:0;
+  }
+
+  to {
+    width:7.5rem;
+    height:2.5rem;
+    margin-left:-.9rem;
+  }
+}
+
+@keyframes large-header {
+  from {
+    padding:.4rem 1rem;
+  }
+
+  to {
+    padding:.6rem 1rem;
+  }
+}
+
+@keyframes large-logo {
+  from {
+    width:7.5rem;
+    height:2.5rem;
+    margin-left:-.9rem;
+  }
+
+  to {
+    width:7rem;
+    height:3rem;
+    margin-left:0;
+  }
+}
+
+@keyframes show-header {
+  from {
+    transform:translateY(-7rem);
+  }
+
+  to {
+    transform:translateY(0rem);
+  }
+}
+
+@keyframes hide-header {
+  from {
+    transform:translateY(0rem);
+  }
+
+  to {
+    transform:translateY(-7rem);
   }
 }
