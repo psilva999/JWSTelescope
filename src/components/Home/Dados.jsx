@@ -8,34 +8,34 @@ const Dados = () => {
       <article>
         <div>
           <h2>Custo</h2>
-          <span>$10 bilhões</span>
+          <span><a className='background-detail n-b'>$10 bilhões</a></span>
         </div>
 
         <div>
           <h2>Potência</h2>
-          <span>2000 watts</span>
+          <span><a className='background-detail n-y'>2000 watts</a></span>
         </div>
 
         <div>
           <h2>Diâmetro</h2>
-          <span>6.5 metros</span>
+          <span><a className='background-detail m-g'>6.5 metros</a></span>
         </div>
       </article>
 
       <article>
         <div>
           <h2>Armazenamento</h2>
-          <span>68 GB</span>
+          <span><a className='background-detail n-b-2'>68 GB</a></span>
         </div>
 
         <div className='years'>
           <h2>Vida útil</h2>
-          <span>+10 anos</span>
+          <span><a className='background-detail n-y-2'>+10 anos</a></span>
         </div>
 
         <div>
           <h2>Alcance</h2>
-          <span>+4 bilhões de ly</span>
+          <span><a className='background-detail m-g-2'>+4 bilhões de ly</a></span>
         </div>
 
       </article>

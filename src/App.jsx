@@ -10,15 +10,21 @@ import { faq } from './components/Events/handleClick'
 
 import Subscribe from './assets/svg/additional/2-email.svg'
 import Arrow from './assets/svg/additional/3-back-top.svg'
+import { highLighter } from './components/Events/highlighter'
+import { bitcoin } from './components/Events/fetchBitcoin'
 
 function App() {
   window.addEventListener('scroll', handleHeader)
   window.addEventListener('scroll', changeImage)
+
   window.addEventListener('scroll', handleTop)
+  window.addEventListener('scroll', highLighter)
 
   window.addEventListener('load', handleHeader)
   window.addEventListener('load', changeImage)
+  window.addEventListener('load', bitcoin)
   
+  window.addEventListener('load', highLighter)
   window.addEventListener('load', handleTop)
   window.addEventListener('load', faq)
 

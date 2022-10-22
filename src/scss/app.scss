@@ -14,6 +14,22 @@ body {
   overflow-y:auto;
   display:grid;
   place-items:center;
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
+
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$normal-black;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$main-white;
+    background:$main-white;
+    border:.375rem solid $main-white;
+  }
 
   button {
     background:none;
@@ -68,6 +84,15 @@ body {
     }
   }
 
+  .background-detail {
+    text-decoration:none;
+    color:$main-black;
+  }
+
+  .dados .background-detail {
+    font-weight:400;
+  }
+
   .volta-pro-topo {
     right:1.5rem;
   }
@@ -83,4 +108,5 @@ body {
 
 @import 'home';
 @import 'button';
+
 @import 'footer';
