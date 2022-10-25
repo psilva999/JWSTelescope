@@ -2,8 +2,6 @@ export function highLighter() {
   const backgroundAnimated = document.querySelectorAll(".background-detail"),
         arrayBackgroundDetail = [...backgroundAnimated]
 
-  console.log(window.scrollY)
-
   backgroundAnimated.forEach(detail => {
     if (detail.classList.contains('l-b'))
       handleBackground(0,'rgba(19,73,150,0)','rgba(19,73,150,.2)')

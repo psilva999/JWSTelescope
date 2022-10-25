@@ -26,8 +26,10 @@ export function handleTop() {
 
 export function handleHeader() {
   const header = document.querySelector('.header-fixo'),
-        logo = document.querySelector(".header-fixo .logo")
+        logo = document.querySelector(".header-fixo .logo"),
+        li = document.querySelector('header ul li:nth-child(2)')
 
+  animationHeader()
   if (window.scrollY >= 34) {
     if (!header.classList.contains("fixed")) {
 
@@ -43,13 +45,25 @@ export function handleHeader() {
       function hideMenu() {
         tempo--
 
-        if (tempo === 0) {
-          if (header.classList.contains('fixed')) {
-            header.style.animation = 'hide-header .6s linear forwards'
-          }
+        if (header.classList.contains("spartan")) {
+          if (header.classList.contains('fixed'))
+            header.style.animation = 'none'
           
           header.classList.add("handle-menu")
           header.classList.remove("journey")
+
+          clearInterval(handleMenu)
+        }
+
+        else if (tempo === 0) {
+          if (header.classList.contains('fixed'))
+            header.style.animation = 'hide-header .6s linear forwards'
+          
+          header.classList.add("handle-menu")
+          header.classList.remove("journey")
+
+          if (!li.classList.contains('hide'))
+            li.classList.add("hide")
 
           clearInterval(handleMenu)
         }
@@ -62,8 +76,35 @@ export function handleHeader() {
     header.classList.remove('fixed')
     header.classList.remove('journey')
     header.classList.remove('handle-menu')
+    li.classList.remove("hide")
 
     header.style.animation = 'large-header .1s linear forwards'
     logo.style.animation = 'large-logo .2s linear forwards'
+  }
+}
+
+export function noAnimation() {
+  const header = document.querySelector('.header-fixo')
+  
+  if (window.scrollY >= 34 && header.classList.contains("journey") && !header.classList.contains('spartan'))
+    header.classList.add('spartan')
+}
+
+function animationHeader() {
+  const header = document.querySelector('.header-fixo')
+  
+  if (window.scrollY >= 34 && header.classList.contains("journey"))
+    header.classList.remove('spartan')
+}
+
+export function handleDropDownMenu() {
+  if (window.scrollY >= 23) {
+    document.documentElement.style.setProperty('--top-after', "2.2rem")
+    document.documentElement.style.setProperty('--top-dropdown', "3.8rem")
+  }
+
+  else {
+    document.documentElement.style.setProperty('--top-after', "5rem")
+    document.documentElement.style.setProperty('--top-dropdown', "6.7rem")
   }
 }

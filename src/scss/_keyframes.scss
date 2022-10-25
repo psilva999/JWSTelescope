@@ -163,3 +163,15 @@
     transform:translateY(-7rem);
   }
 }
+
+@keyframes from-the-south {
+  from {
+    transform:translateY(2rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateY(0rem);
+    opacity:1;
+  }
+} 

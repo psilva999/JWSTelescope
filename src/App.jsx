@@ -5,13 +5,13 @@ import Header from './components/Header'
 import Home from './components/Home'
 import Footer from './components/Footer'
 
-import { changeImage, handleHeader, handleTop } from './components/Events/handleScroll'
+import { changeImage, handleDropDownMenu, handleHeader, handleTop } from './components/Events/handleScroll'
 import { faq } from './components/Events/handleClick'
 
 import Subscribe from './assets/svg/additional/2-email.svg'
 import Arrow from './assets/svg/additional/3-back-top.svg'
 import { highLighter } from './components/Events/highlighter'
-import { bitcoin } from './components/Events/fetchBitcoin'
+import { bitcoin, closeMenuFromOutside } from './components/Events/handleTags'
 
 function App() {
   window.addEventListener('scroll', handleHeader)
@@ -19,14 +19,28 @@ function App() {
 
   window.addEventListener('scroll', handleTop)
   window.addEventListener('scroll', highLighter)
+  window.addEventListener("scroll", handleDropDownMenu)
+
+  window.addEventListener("scroll", () => {
+    const container = document.querySelector('.infos-languages ul')
+
+    if (container.classList.contains("active")) {
+      document.documentElement.style.setProperty('--value', "none")
+      container.style.display = 'none'
+      container.classList.remove('active')
+    }
+  })
 
   window.addEventListener('load', handleHeader)
   window.addEventListener('load', changeImage)
+
   window.addEventListener('load', bitcoin)
-  
   window.addEventListener('load', highLighter)
+
   window.addEventListener('load', handleTop)
   window.addEventListener('load', faq)
+
+  window.addEventListener('click', closeMenuFromOutside)
 
   return (
     <>

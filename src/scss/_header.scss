@@ -1,4 +1,10 @@
 @import 'config';
+@import 'keyframes';
+
+:root {
+  --top-after:5rem;
+  --top-dropdown:6.7rem;
+}
 
 header {
   background:$header-absolute;
@@ -13,6 +19,10 @@ header {
     background:$header-fixed;
     top:0rem;
     padding:.4rem 1rem;
+  }
+
+  &.spartan {
+    animation:none;
   }
 
   .logo {
@@ -30,12 +40,65 @@ header {
 
     &:nth-child(2) {
       padding-bottom:.3rem;
-    }
 
-    &:nth-child(2):after, &:nth-child(2):hover:after {
-      width:0%;
-      height:0%;
-    } 
+      &:hover ul {
+        display:grid;
+        animation:from-the-south .3s linear forwards;
+      }
+
+      &.hide:hover ul {
+        display:none;
+      }
+
+      &:nth-child(2):after {
+        content:'';
+        position:fixed;
+        top:var(--top-after);
+        width:4rem !important;
+        height:3rem !important;
+        background:transparent;
+        cursor:auto;
+        display:block !important;
+      }
+
+      ul {
+        position:fixed;
+        display:none;
+        place-items:right;
+        opacity:1;
+        gap:.3rem;
+        top:var(--top-dropdown);
+        margin-left:-5rem;
+        background:$main-white;
+        border-radius:.6rem;
+        padding:1.5rem 1rem 1.5rem .1rem;
+        cursor:auto;
+
+        li {
+          font-size:1rem;
+          opacity:.6;
+          transition:.2s;
+          color:$main-black;
+          max-width:12rem;
+          text-align:right; 
+          cursor:pointer;
+
+          &:hover {
+            opacity:1;
+            transition:.2s;
+          }
+
+          &:nth-child(2) {
+            margin-left:3.6rem;
+
+            &:after {
+              display:none !important;
+            }
+          }
+        }
+
+      }
+    }
 
     &:after {
       content:'';

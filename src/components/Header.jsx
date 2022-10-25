@@ -3,13 +3,14 @@ import Infos from './Others/Infos'
 
 import Logo from '../assets/svg/1-header/3-logo.svg'
 import Dropdown from '../assets/svg/1-header/4-dropdown.svg'
+import { handleHeader, noAnimation } from './Events/handleScroll'
 
 const Header = () => {
   return (
     <>
       <Infos/>
 
-      <header className='header-fixo'>
+      <header className='header-fixo' onClick={ noAnimation } onMouseMove={ noAnimation } onMouseOut={ handleHeader }>
         <div>
           <img src={ Logo } className='logo'/>
 
@@ -26,6 +27,15 @@ const Header = () => {
               <li>
                 <span>história</span>
                 <img src={ Dropdown }/>
+
+                <ul>
+                  <li>Início do projeto</li>
+                  <li>Primeiras ideias</li>
+                  <li>Planejamento e construção</li>
+                  <li>Localização</li>
+                  <li>Objetivo da missão</li>
+                  <li>Lançamento</li>
+                </ul>
               </li>
 
               <li>imagens</li>
