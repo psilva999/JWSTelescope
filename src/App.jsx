@@ -12,6 +12,7 @@ import Subscribe from './assets/svg/additional/2-email.svg'
 import Arrow from './assets/svg/additional/3-back-top.svg'
 import { highLighter } from './components/Events/highlighter'
 import { bitcoin, closeMenuFromOutside } from './components/Events/handleTags'
+import User from './components/Others/User'
 
 function App() {
   window.addEventListener('scroll', handleHeader)
@@ -67,7 +68,9 @@ function App() {
       </Link>
 
       <Footer/>
+      <User/>
     </>
+    
   )
 }
 

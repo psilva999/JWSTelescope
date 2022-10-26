@@ -62,7 +62,7 @@ export function handleHeader() {
           header.classList.add("handle-menu")
           header.classList.remove("journey")
 
-          if (!li.classList.contains('hide'))
+          if (!li.classList.contains('hide') && window.scrollY >= 34)
             li.classList.add("hide")
 
           clearInterval(handleMenu)

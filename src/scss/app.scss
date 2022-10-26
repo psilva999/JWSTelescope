@@ -1,4 +1,5 @@
 @import 'config';
+@import 'keyframes';
 
 * {
   margin:0;
@@ -53,6 +54,43 @@ body {
         flex-wrap:wrap;
         justify-content:center;
         align-items:center;
+      }
+
+    }
+  }
+
+  .input-style {
+    display:grid;
+    gap:1rem;
+
+    label {
+      position:absolute;
+      font-size:.8rem;
+      margin-top:.7rem;
+      margin-left:.6rem;
+      font-weight:300;
+      user-select:none;
+      color:$sombra;
+      z-index:7;
+      height:1rem;
+      animation:hide-animation .3s linear forwards;
+    }
+
+    input {
+      background:transparent;
+      border:.1rem solid $sombra;
+      border-radius:.1rem;
+      padding:.6rem .5rem;
+      font-size:.8rem;
+      z-index:8;
+      width:15.8rem;
+
+      &:focus {
+        outline:none;
+      }
+
+      &:valid ~ label, &:focus ~ label {
+        animation:show-animation .3s linear forwards;
       }
 
     }

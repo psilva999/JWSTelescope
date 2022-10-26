@@ -12,13 +12,12 @@
 .infos-languages, header {
   width:100vw;
   left:0;
-  z-index:3;
 }
 
 .infos-languages {
+  z-index:4;
   justify-content:center;
   gap:37.6rem;
-  z-index:100 !important;
   background:$normal-black;
   top:0;
   height:2rem;
