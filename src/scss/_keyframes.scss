@@ -203,13 +203,61 @@
 
   to {
     font-size:.65rem;
-    transform:translate(-.1rem, -1.3rem);
+    transform:translate(-.1rem, -1.1rem);
     z-index:8;
     background:$main-black;
     border-left:.1rem solid $sombra;
     border-right:.1rem solid $sombra;
     color:rgba(233,232,232,.6);
     padding:0 .2rem;
+  }
+}
+
+@keyframes border-green {
+  from {
+    font-size:.65rem;
+    transform:translate(-.1rem, -1.1rem);
+    z-index:8;
+    background:$main-black;
+    color:rgba(233, 232, 232, .6);
+    padding:0 .2rem;
+    border-left:.1rem solid  $sombra;
+    border-right:.1rem solid $sombra;
+  }
+
+  to {
+    font-size:.65rem;
+    transform:translate(-.1rem, -1.1rem);
+    z-index:8;
+    background:$main-black;
+    color:rgba(233, 232, 232, .6);
+    padding:0 .2rem;
+    border-left:.1rem solid $valid;
+    border-right:.1rem solid $valid;
+  }
+}
+
+@keyframes border-red {
+  from {
+    font-size:.65rem;
+    transform:translate(-.1rem, -1.1rem);
+    z-index:8;
+    background:$main-black;
+    color:rgba(233, 232, 232, .6);
+    padding:0 .2rem;
+    border-left:.1rem solid $sombra;
+    border-right:.1rem solid $sombra;
+  }
+
+  to {
+    font-size:.65rem;
+    transform:translate(-.1rem, -1.1rem);
+    z-index:8;
+    background:$main-black;
+    color:rgba(233, 232, 232, .6);
+    padding:0 .2rem;
+    border-left:.1rem solid $error;
+    border-right:.1rem solid $error;
   }
 }
 

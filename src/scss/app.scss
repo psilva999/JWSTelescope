@@ -93,6 +93,22 @@ body {
         animation:show-animation .3s linear forwards;
       }
 
+      &:valid {
+        border:.1rem solid $valid;
+      }
+
+      &.valid:valid ~ label {
+        animation:border-green .3s linear forwards;
+      }
+
+      &.error {
+        border:.1rem solid $error;
+      }
+
+      &.error:focus ~ label {
+        animation:border-red .3s linear forwards;
+      }
+
     }
   }
 

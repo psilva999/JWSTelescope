@@ -24,7 +24,26 @@
   color:#E9E8E8;
   border-radius:1rem;
   width:23rem;
+  height:32rem;
+  display:grid;
+  place-items:center;
   padding:2rem 3.4rem;
+}
+
+.singup-login.active .container .close {
+  position:absolute;
+  width:1.4rem;
+  cursor:pointer;
+  margin-top:-29rem;
+  margin-left:20rem;
+  opacity:.6;
+  transition:.3s;
+}
+
+.singup-login.active .container .close:hover {
+  opacity:1;
+  transform:scale(1.1);
+  transition:.3s;
 }
 
 .singup-login.active .login, .singup-login.active .signup {
@@ -129,6 +148,25 @@
   background:#FDA916;
   color:#252627;
   border:.07rem solid #FDA916;
+}
+
+.singup-login .more:disabled {
+  opacity:.6;
+  border:.07rem solid transparent;
+  cursor:auto;
+}
+
+.singup-login .more:disabled:hover {
+  border:.07rem solid transparent;
+  background:#E9E8E8;
+}
+
+.singup-login .more.sent:disabled, .singup-login .more.sent:disabled:hover {
+  opacity:1;
+  border:.07rem solid #FDA916;
+  cursor:auto;
+  background:#FDA916;
+  color:#252627;
 }
 
 .singup-login.active .input-style:nth-child(2) {

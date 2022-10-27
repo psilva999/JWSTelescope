@@ -2,6 +2,8 @@ import React from 'react'
 
 import Google from '../../assets/svg/3-login-share-newsletter/3-google.svg'
 
+import { login } from '../Events/input'
+
 const Sign = () => {
 
   return (
@@ -27,20 +29,13 @@ const Sign = () => {
           <label htmlFor="">E-mail</label>
         </p>
 
-        <button className='more continue' disabled>CONTINUE</button>
+        <button className='more' disabled>CONTINUE</button>
       </article>
 
       <article>
         <span>
-          Forgot
-          <a> E-mail </a>
-          or
-          <a> password</a>?
-        </span>
-
-        <span>
-          New on JWST?
-          <a className='login'> LOGIN</a>
+          Already a Nerd?
+          <a className='log' onClick={ login }> LOGIN</a>
         </span>
         
       </article>  

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Google from '../../assets/svg/3-login-share-newsletter/3-google.svg'
+import { sign } from '../Events/input'
 
 const Login = () => {
   return (
@@ -45,7 +46,7 @@ const Login = () => {
 
         <span>
           New on JWST?
-          <a className='sign'> SIGN UP</a>
+          <a className='sign' onClick={ sign }> SIGN UP</a>
         </span>
         
       </article>
