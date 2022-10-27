@@ -4,6 +4,7 @@ import Infos from './Others/Infos'
 import Logo from '../assets/svg/1-header/3-logo.svg'
 import Dropdown from '../assets/svg/1-header/4-dropdown.svg'
 import { handleHeader, noAnimation } from './Events/handleScroll'
+import { handleLoginSign } from './Events/input'
 
 const Header = () => {
   return (
@@ -44,8 +45,8 @@ const Header = () => {
             </ul>
 
             <div>
-              <button className='login'>login</button>
-              <button className='sign up'>sign up</button>
+              <button className='login' onClick={ handleLoginSign } id='login-button'>login</button>
+              <button className='sign up' onClick={ handleLoginSign } id='sign-button'>sign up</button>
             </div>
 
           </nav>

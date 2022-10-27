@@ -13,6 +13,7 @@
   display:grid;
   place-items:center;
   background:rgba(27,28,29,.5);
+  animation:opacity-one .2s linear forwards;
 }
 
 .singup-login.active article:first-child {
@@ -178,4 +179,20 @@
   gap:.6rem;
   width:max-content;
   justify-self:left;
+}
+
+.singup-login.active .login.active .eye {
+  position:absolute;
+  z-index:9;
+  width:1.2rem;
+  margin-left:14rem;
+  margin-top:.7rem;
+  cursor:pointer;
+  opacity:.3;
+  transition:.3s;
+}
+
+.singup-login.active .login.active .eye:hover, .singup-login.active .login.active .eye.active {
+  opacity:1;
+  transition:.3s;
 }

@@ -101,6 +101,10 @@ body {
         animation:border-green .3s linear forwards;
       }
 
+      &#password:valid {
+        border:.1rem solid $sombra;
+      }
+
       &.error {
         border:.1rem solid $error;
       }

@@ -13,6 +13,7 @@ import Arrow from './assets/svg/additional/3-back-top.svg'
 import { highLighter } from './components/Events/highlighter'
 import { bitcoin, closeMenuFromOutside } from './components/Events/handleTags'
 import User from './components/Others/User'
+import { closeLoginFromOutside } from './components/Events/input'
 
 function App() {
   window.addEventListener('scroll', handleHeader)
@@ -42,6 +43,7 @@ function App() {
   window.addEventListener('load', faq)
 
   window.addEventListener('click', closeMenuFromOutside)
+  window.addEventListener('click', closeLoginFromOutside)
 
   return (
     <>

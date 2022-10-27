@@ -19,3 +19,50 @@ export function sign() {
     sign.classList.add("active")
   } 
 }
+
+export function handleLoginSign(e) {
+  const signLogin = document.querySelector(".singup-login"),
+        login = document.querySelector('.singup-login.active .login'),
+        sign = document.querySelector('.singup-login.active .signup')
+
+  if (signLogin.classList.contains('active'))
+    removeLogin()
+
+  else {
+    signLogin.classList.add("active")
+    signLogin.style.animation = 'opacity-one .1s linear forwards' 
+  }
+
+  if (e.target.id === 'login-button') {
+    sign.classList.remove("active")
+    login.classList.add('active')
+  }
+
+  if (e.target.id === 'sign-button') {
+    login.classList.remove('active')
+    sign.classList.add("active")
+  }
+}
+
+export function closeLoginFromOutside(e) {
+  if (e.target.id === 'signup-login')
+    removeLogin()
+}
+
+function removeLogin() {
+  const signLogin = document.querySelector(".singup-login")
+
+  signLogin.style.animation = 'opacity-zero .1s linear forwards'
+
+  let tempo = 2,
+      containerLogin = setInterval(countdown, 200)
+
+  function countdown() {
+    tempo--
+
+    if (tempo === 0) {
+      signLogin.classList.remove('active')
+      clearInterval(containerLogin)
+    }
+  }
+}
