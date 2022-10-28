@@ -22,8 +22,8 @@ export function sign() {
 
 export function handleLoginSign(e) {
   const signLogin = document.querySelector(".singup-login"),
-        login = document.querySelector('.singup-login.active .login'),
-        sign = document.querySelector('.singup-login.active .signup')
+        login = document.querySelector('.singup-login .login'),
+        sign = document.querySelector('.singup-login .signup')
 
   if (signLogin.classList.contains('active'))
     removeLogin()
@@ -31,16 +31,17 @@ export function handleLoginSign(e) {
   else {
     signLogin.classList.add("active")
     signLogin.style.animation = 'opacity-one .1s linear forwards' 
-  }
 
-  if (e.target.id === 'login-button') {
-    sign.classList.remove("active")
-    login.classList.add('active')
-  }
+    if (e.target.id === 'login-button' && !login.classList.contains("active")) {
+      sign.classList.remove("active")
+      login.classList.add('active')
+    }
 
-  if (e.target.id === 'sign-button') {
-    login.classList.remove('active')
-    sign.classList.add("active")
+    else if (e.target.id === 'sign-button' && !sign.classList.contains("active")) { 
+      login.classList.remove('active')
+      sign.classList.add("active")
+    }
+
   }
 }
 
@@ -64,5 +65,20 @@ function removeLogin() {
       signLogin.classList.remove('active')
       clearInterval(containerLogin)
     }
+  }
+}
+
+export function handlePassword() {
+  const input = document.querySelector("#password"),
+        eye = document.querySelector('.eye')
+
+  if (input.type === "password") {
+    input.type = "text";
+    eye.classList.add("active")
+  } 
+  
+  else {
+    input.type = "password";
+    eye.classList.remove('active')
   }
 }

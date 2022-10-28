@@ -3,7 +3,7 @@ import React from 'react'
 import Google from '../../assets/svg/3-login-share-newsletter/3-google.svg'
 import Eye from '../../assets/svg/3-login-share-newsletter/4-eye.svg'
 
-import { sign } from '../Events/input'
+import { handlePassword, sign } from '../Events/input'
 
 const Login = () => {
   return (
@@ -33,7 +33,7 @@ const Login = () => {
         <p className='input-style'>
           <input type="password" id='password' name='password' required/>
           <label htmlFor="password">Password</label>
-          <img src={ Eye } className='eye'/>
+          <img src={ Eye } className='eye' onClick={ handlePassword }/>
         </p>
 
         <button className='more' disabled>LOGIN</button>
