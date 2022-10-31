@@ -4,12 +4,12 @@
   --value:none;
 }
 
-.infos-languages, .infos-languages article:first-child, .infos-languages article:first-child div, .infos-languages article:first-child button, header, .infos-languages article:last-child {
+.infos-languages, .infos-languages article:first-child, .infos-languages article:first-child div, .infos-languages article:first-child button, .header-fixo, .infos-languages article:last-child {
   display:flex;
   align-items:center;
 }
  
-.infos-languages, header {
+.infos-languages, .header-fixo {
   width:100vw;
   left:0;
 }

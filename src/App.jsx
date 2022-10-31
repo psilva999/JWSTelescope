@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'react-scroll'
 
 import Header from './components/Header'
-import Home from './components/Home'
+// import Home from './components/Home'
+import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
 import { changeImage, handleDropDownMenu, handleHeader, handleTop } from './components/Events/handleScroll'
@@ -50,7 +51,7 @@ function App() {
       <Header/>
 
       <main>
-        <Home/>
+        <Newsletter/>
       </main>
       
       <button className='subscribe'>

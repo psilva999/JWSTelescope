@@ -1,3 +1,9 @@
+:root {
+  --yellow:#FDA916;
+  --black:#252627;
+  --white:#E9E8E8;
+}
+
 .singup-login {
   display:none;
 }
@@ -21,8 +27,8 @@
 }
 
 .singup-login.active .container {
-  background:#252627;
-  color:#E9E8E8;
+  background:var(--black);
+  color:var(--white);
   border-radius:1rem;
   width:23rem;
   height:32rem;
@@ -75,7 +81,7 @@
 .singup-login.active div:before {
   margin-top:6.9rem;
   content:'or';
-  background:#252627;
+  background:var(--black);
   padding:0 .5rem;
   z-index:9;
   font-size:.7rem;
@@ -97,7 +103,7 @@
 }
 
 .singup-login.active a {
-  color:#FDA916;
+  color:var(--yellow);
   cursor:pointer;
   font-weight:400;
 }
@@ -146,9 +152,9 @@
 }
 
 .singup-login .more:hover {
-  background:#FDA916;
-  color:#252627;
-  border:.07rem solid #FDA916;
+  background:var(--yellow);
+  color:var(--black);
+  border:.07rem solid var(--yellow);
 }
 
 .singup-login .more:disabled {
@@ -159,15 +165,15 @@
 
 .singup-login .more:disabled:hover {
   border:.07rem solid transparent;
-  background:#E9E8E8;
+  background:var(--white);
 }
 
 .singup-login .more.sent:disabled, .singup-login .more.sent:disabled:hover {
   opacity:1;
-  border:.07rem solid #FDA916;
+  border:.07rem solid var(--yellow);
   cursor:auto;
-  background:#FDA916;
-  color:#252627;
+  background:var(--yellow);
+  color:var(--black);
 }
 
 .singup-login.active .input-style:nth-child(2) {
