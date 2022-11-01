@@ -292,3 +292,81 @@
     opacity:0;
   }
 }
+
+@keyframes show-large-animation {
+  from {
+    font-size:1rem;
+    transform:(0, 0);
+    z-index:-1;
+    opacity:.3;
+    background:none;
+  }
+
+  to {
+    font-size:.75rem;
+    transform:translate(0, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $sombra;
+    border-right:.1rem solid $sombra;
+  }
+}
+
+@keyframes hide-large-animation {
+  from {
+    font-size:.75rem;
+    transform:translate(0, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $sombra;
+    border-right:.1rem solid $sombra;
+  }
+
+  to {
+    font-size:1rem;
+    transform:(0, 0);
+    z-index:-1;
+    opacity:.3;
+    background:none;
+  }
+}
+
+@keyframes border-green-large {
+  from {
+    font-size:.75rem;
+    transform:translate(.2rem, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $sombra;
+    border-right:.1rem solid $sombra;
+  }
+
+  to {
+    font-size:.75rem;
+    transform:translate(.2rem, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $valid;
+    border-right:.1rem solid $valid;
+  }
+}
+
+@keyframes border-red-large {
+  from {
+    font-size:.75rem;
+    transform:translate(.2rem, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $sombra;
+    border-right:.1rem solid $sombra;
+  }
+
+  to {
+    font-size:.75rem;
+    transform:translate(.2rem, -1.1rem);
+    z-index:5;
+    opacity:1;
+    border-left:.1rem solid $error;
+    border-right:.1rem solid $error;
+  }
+}

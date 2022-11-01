@@ -1,8 +1,175 @@
 @import 'config';
 
 .newsletter {
-  background:green;
-  height:100vh;
-  width:100vw;
-  
+  display:grid;
+  place-items:top center;
+
+  header {
+    display:grid;
+    place-items:center;
+    gap:.6rem;
+    margin-top:12vh;
+
+    h1 {
+      font-size:2.5rem;
+      font-weight:500;
+      color:$normal-white;
+      letter-spacing:.1rem;
+    }
+
+    span {
+      opacity:.8;
+      width:28rem;
+      text-align:center;
+      font-size:1.2rem;
+    }
+  }
+
+  form {
+    display:grid;
+    margin-top:3rem;
+    width:38rem;
+    gap:1.5rem;
+
+    div:first-child {
+      display:flex;
+      justify-content:space-between;
+    }
+
+    .large-style {
+      display:grid;
+
+      label {
+        position:absolute;
+        margin-top:.7rem;
+        margin-left:.5rem;
+        user-select:none;
+        height:1rem;
+        opacity:.3;
+        background:$main-black;
+        padding:0 .2rem 0 .3rem;
+        animation:hide-large-animation .2s linear forwards;
+        font-size:.9rem;
+      }
+      
+      input, label {
+        font-weight:300;
+        letter-spacing:.07rem;
+      }
+
+      input {
+        font-size:1.1rem;
+        background:none;
+        border:.1rem solid $sombra;
+        border-radius:.1rem;
+        padding:.6rem .7rem;
+
+        &:focus {
+          outline:none;
+        }
+
+        &#name, &#lastName {
+          width:18.3rem;
+        }
+
+        &#nEmail {
+          padding:.6rem .7rem .7rem .7rem;
+        }
+
+        &.valid:valid {
+          border:.1rem solid $valid;
+        }
+
+        &.error {
+          border:.1rem solid $error;
+        }
+
+        &.valid:valid ~ label, &:focus ~ label {
+          animation:show-large-animation .3s linear forwards;
+        }
+
+        &.valid:valid ~ label {
+          animation:border-green-large .3s linear forwards;
+        }
+
+        &.error:focus ~ label {
+          animation:border-red-large .3s linear forwards;
+        }
+      }
+    }
+
+    .dont-send {
+      width:30rem;
+      opacity:.6;
+      font-weight:300;
+      text-align:center;
+      margin:auto;
+      margin-top:2rem;
+    }
+
+    .checkbox {
+      margin-top:1.5rem;
+      gap:1rem;
+      display:grid;
+
+      p {
+        gap:.5rem;
+        align-items:center;
+        display:flex;
+        font-size:.9rem;
+        font-weight:300;
+        user-select:none;
+      }
+
+      a {
+        color:$normal-yellow;
+        cursor:pointer;
+      }
+
+      input[type='checkbox'] {
+        background:none;
+        appearance:none;
+        height:1rem;
+        width:1rem;
+        border:.1rem solid $l-gray;
+        transition:.3s;
+
+        &:focus {
+          outline:none;
+        }
+
+        &:checked {
+          background:$main-white;
+        }
+
+        &:checked:before {
+          transition:.3s;
+          position:absolute;
+          margin-left:.05rem;
+          margin-top:-.3rem;
+          font-size:.9rem;
+          content:'✔';
+          color:$main-black;
+        }
+      }
+    }
+
+    .more {
+      margin:auto;
+      width:8.3rem;
+      background:$normal-gray;
+      border:.1rem solid $normal-gray;
+      color:$normal-white;
+      margin-top:2rem;
+      transition:.3s;
+
+      &:hover {
+        background:$main-white;
+        border:.1rem solid $main-white;
+        color:$main-black;
+        transition:.3s;
+      }
+    }
+
+  }
 }

@@ -31,8 +31,7 @@
       outline:none;
     }
 
-    &:valid ~ label,
-    &:focus ~ label {
+    &:valid ~ label, &:focus ~ label {
       animation:show-animation .3s linear forwards;
     }
 
