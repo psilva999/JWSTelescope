@@ -1,9 +1,10 @@
 import React from 'react'
+import { handleForm } from '../Events/input'
 
 const Form = () => {
   return (
 
-    <form>
+    <form onSubmit={ handleForm }>
       <div>
 
         <p className='large-style'>

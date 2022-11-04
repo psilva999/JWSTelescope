@@ -82,3 +82,7 @@ export function handlePassword() {
     eye.classList.remove('active')
   }
 }
+
+export function handleForm(e) {
+  e.preventDefault()
+}

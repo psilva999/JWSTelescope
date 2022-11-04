@@ -304,7 +304,7 @@
 
   to {
     font-size:.75rem;
-    transform:translate(0, -1.1rem);
+    transform:translate(0, -1.3rem);
     z-index:5;
     opacity:1;
     border-left:.1rem solid $sombra;
@@ -315,7 +315,7 @@
 @keyframes hide-large-animation {
   from {
     font-size:.75rem;
-    transform:translate(0, -1.1rem);
+    transform:translate(0, -1.3rem);
     z-index:5;
     opacity:1;
     border-left:.1rem solid $sombra;
@@ -334,7 +334,7 @@
 @keyframes border-green-large {
   from {
     font-size:.75rem;
-    transform:translate(.2rem, -1.1rem);
+    transform:translate(.2rem, -1.3rem);
     z-index:5;
     opacity:1;
     border-left:.1rem solid $sombra;
@@ -354,7 +354,7 @@
 @keyframes border-red-large {
   from {
     font-size:.75rem;
-    transform:translate(.2rem, -1.1rem);
+    transform:translate(.2rem, -1.3rem);
     z-index:5;
     opacity:1;
     border-left:.1rem solid $sombra;
