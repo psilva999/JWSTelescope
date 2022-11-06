@@ -1,19 +1,23 @@
 import React from 'react'
 
+import Distancia from '../../assets/imgs/3-sobre/3.jpg'
+import Refletir from '../../assets/imgs/3-sobre/4.jpg'
+import Gold from '../../assets/imgs/3-sobre/5.jpg'
+
 const DeepDive = () => {
   return (
     <>
       <article> <h1>Que tal um Deeper dive? Venha checar nosso infográfico do JWST</h1>
 
         <a href="" target='_blank'>
-          <li> <img src=''/> </li>
+          <li> <img src={ Distancia }/> </li>
 
           <h1>Distância</h1>
           <span>James Webb Space Telescope “Distance Matters” Infographic</span>
         </a>
 
         <a href="" target='_blank'>
-          <li> <img src=''/> </li>
+          <li> <img src={ Refletir }/> </li>
 
           <h1>Observar e refletir</h1>
           <span>James Webb Space Telescope “Seeing is Believing” Infographic</span>
@@ -33,7 +37,7 @@ const DeepDive = () => {
           <button className='more'>SAIBA MAIS</button>
         </div>
 
-        <img src=""/>
+        <img src={ Gold }/>
       </article>
     </>
 

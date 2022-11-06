@@ -1,9 +1,11 @@
 import React from 'react'
+import Peoples from '../../assets/imgs/3-sobre/1.jpg'
+import Work from '../../assets/imgs/3-sobre/2.jpg'
 
 const Team = () => {
   return (
     <>
-      <img src=""/>
+      <img src={ Peoples }/>
 
       <article>
         <h1>O time do <a>JWST</a></h1>
@@ -20,7 +22,7 @@ const Team = () => {
         </p>
       </article>
 
-      <article> <img src=""/>
+      <article> <img src={ Work }/>
 
         <div> <h1>Como que foi trabalhar no Webb?</h1>
 
