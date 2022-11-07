@@ -2,7 +2,12 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div>News</div>
+    <section className='news'>
+
+      <div className='content-news'>
+
+      </div>
+    </section>
   )
 }
 

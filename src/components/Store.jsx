@@ -2,7 +2,11 @@ import React from 'react'
 
 const Store = () => {
   return (
-    <div>Store</div>
+    <section className='store'>
+      <article>
+        
+      </article>
+    </section>
   )
 }
 
