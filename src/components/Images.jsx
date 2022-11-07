@@ -2,7 +2,9 @@ import React from 'react'
 
 const Images = () => {
   return (
-    <div>Images</div>
+    <section className='images'>
+      
+    </section>
   )
 }
 
