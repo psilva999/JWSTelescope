@@ -9,68 +9,65 @@ import Aliens from '../../assets/imgs/3-sobre/10.jpg'
 
 const Exploration = () => {
   return (
-    <>
-      <article>
-        <a href="" target='_blank'>
+
+    <article className='nn s-c bla'>
+      <div>
+        <a href="https://www.northropgrumman.com/" target='_blank' className='dd'>
           <li><img src={ Liga }/></li>
 
-          <h1>Liga própria</h1>
+          <h2>Liga própria</h2>
           <p>
             O ônibus espacial que levou o JWST
           </p>
 
-          <p><span>^</span>Saiba mais</p>
+          <p className='war'>Saiba mais</p>
         </a>
 
-        <a href="" target='_blank'>
+        <a href="https://www.northropgrumman.com/" target='_blank'>
           <li><img src={ Abastecedor }/></li>
 
-          <h1>Abastecedor</h1>
+          <h2>Abastecedor</h2>
+          <p>
+            Vestindo para o sucesso da missão
+          </p>
+
+          <p className='war'>Saiba mais</p>
+        </a>
+
+        <a href="https://www.northropgrumman.com/" target='_blank'>
+          <li><img src={ Engenharia }/></li>
+
+          <h2>Engenharia</h2>
           <p>
             O JWST Sunshield toma sua forma
           </p>
 
-          <p><span>^</span>Saiba mais</p>
+          <p className='war'>Saiba mais</p>
         </a>
 
-        <a href="" target='_blank'>
-          <li><img src={ Engenharia }/></li>
+        <a href="https://www.northropgrumman.com/" target='_blank'>
+          <li><img src={ Tec }/></li>
 
-          <h1>Tecnologia</h1>
+          <h2>Tecnologia</h2>
           <p>
             A tecnologia do James Webb
           </p>
 
-          <p><span>^</span>Saiba mais</p>
+          <p className='war'>Saiba mais</p>
         </a>
 
-        <a href="" target='_blank'>
-          <li><img src={ Tec }/></li>
-
-          <h1>Engenharia</h1>
-          <p>
-            O JWST Sunsshield toma
-          </p>
-
-          <p><span>^</span>Saiba mais</p>
-        </a>
-
-        <a href="" target='_blank'>
+        <a href="https://www.northropgrumman.com/" target='_blank' className='dd'>
           <li><img src={ Aliens }/></li>
 
-          <h1>Aliens</h1>
+          <h2>Aliens</h2>
           <p>
             Vida em outros planetas?
           </p>
 
-          <p><span>^</span>Saiba mais</p>
+          <p className='war'>Saiba mais</p>
         </a>
-      </article>
-
-      <article>
-        <h1>Mais um passo na nossa <a>exploração espacial</a></h1>
-      </article>
-    </>
+      </div>
+    </article>
 
   )
 }

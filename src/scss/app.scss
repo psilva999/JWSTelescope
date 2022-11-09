@@ -71,6 +71,7 @@ body {
       cursor:pointer;
       animation:show-button .2s linear forwards;
       bottom:2rem;
+      z-index:2;
       opacity:.8;
       transition:.2s;
     }

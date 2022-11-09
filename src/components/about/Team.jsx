@@ -39,7 +39,7 @@ const Team = () => {
         </p>
       </article>
 
-      <article className='s-c whi'> <img src={ Work }/>
+      <article className='s-c whi'> <img src={ Work } className='img-w'/>
 
         <div> <h1>Como que foi trabalhar no Webb?</h1>
 

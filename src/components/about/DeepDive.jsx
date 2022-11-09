@@ -7,24 +7,26 @@ import Gold from '../../assets/imgs/3-sobre/5.jpg'
 const DeepDive = () => {
   return (
     <>
-      <article> <h1>Que tal um Deeper dive? Venha checar nosso infográfico do JWST</h1>
+      <article className='deep-dive s-c bla'> <h1>Que tal um Deeper dive? Venha checar nosso infográfico do JWST</h1>
 
-        <a href="" target='_blank'>
-          <li> <img src={ Distancia }/> </li>
+        <div>
+          <a href="https://webbtelescope.org/contents/media/images/4168-Image?keyword=Infographics" target='_blank' className='dd first'>
+            <li> <img src={ Distancia }/> </li>
 
-          <h1>Distância</h1>
-          <span>James Webb Space Telescope “Distance Matters” Infographic</span>
-        </a>
+            <h2>Distância</h2>
+            <span>James Webb Space Telescope “Distance Matters” Infographic</span>
+          </a>
 
-        <a href="" target='_blank'>
-          <li> <img src={ Refletir }/> </li>
+          <a href="https://webbtelescope.org/contents/news-releases/2022/news-2022-053" target='_blank' className='dd last'>
+            <li> <img src={ Refletir }/> </li>
+            <h2>Observar e refletir</h2>
 
-          <h1>Observar e refletir</h1>
-          <span>James Webb Space Telescope “Seeing is Believing” Infographic</span>
-        </a>
+            <span>James Webb Space Telescope “Seeing is Believing” Infographic</span>
+          </a>
+        </div>
       </article>
 
-      <article>
+      <article className='how s-c whi'>
         <div> <h1>Como o James Webb se tornou possível?  </h1>
 
           <p>
