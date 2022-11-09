@@ -1,3 +1,150 @@
 @import 'config';
 
+.about {
+  .peoples {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-2;
+    object-fit:cover;
+    width:100vw;
+    height:100vh;
+  }
 
+  .presentation {
+    margin-top:-20vh;
+
+    article {
+      margin-top:12vh;
+    }
+
+    h1:after {
+      content:'';
+      position:absolute;
+      background:$main-blue;
+      margin-left:-9.1rem;
+      margin-top:.15rem;
+      width:9rem;
+      height:3.3rem;
+      z-index:-1;
+      animation:max-size 1.2s linear forwards;
+    }
+
+    span {
+      width:31rem;
+      font-weight:400;
+    }
+
+    a:first-child {
+      background:$normal-yellow;
+      color:$main-black;
+    }
+  }
+
+  .s-c {
+    width:100vw;
+
+    h1 {
+      font-weight:400;
+      font-size:2.7rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+
+    &.bla {
+      background: $main-black;
+
+      p:after {
+        content:'';
+        background:url("../assets/svg/additional/8-dots.svg");
+        position:absolute;
+        width:6rem;
+        height:6rem;
+        opacity:.1;
+      }
+    }
+
+    &.whi {
+      background:$main-white;
+      display:flex;
+      gap:1.5rem;
+      justify-content:left;
+      align-items:center;
+
+      img {
+        width:45rem;
+        height:660px;
+        object-fit:cover;
+      }
+
+      div {
+        display:grid;
+        gap:.6rem;
+      }
+
+      h1 {
+        font-size:2.2rem;
+        color:$normal-black;
+        width:27rem;
+        font-weight:500;
+        margin-bottom:.4rem;
+      }
+
+      p { 
+        color:$main-black;
+        width:26.5rem;
+        font-size:1.3rem;
+      }
+
+      .more {
+        justify-self:left;
+        background:$main-black;
+        border:.07rem solid $main-black;
+        color:$main-white;
+        margin-left:0;
+        margin-top:1.3rem;
+        font-size:.8rem;
+        padding-left:.8rem;
+        padding-right:.8rem;
+
+        &:hover {
+          background:$main-white;
+          color:$main-black;
+        }
+      }
+    }
+  }
+
+  #what {
+    padding:5rem 0 6.5rem 0;
+    display:grid;
+    place-items:center;
+    gap:1rem;
+
+    h1 {
+      width:60rem;
+      margin-bottom:1rem;
+      text-align:left;
+      color:$normal-white;
+    }
+
+    p {
+      justify-self:left;
+      width:60rem;
+
+      &.first:after {
+        margin-top:-10rem;
+        margin-left:57rem;
+      }
+
+      &.last:after {
+        margin-left:47rem;
+        margin-top:-1rem;
+      }
+    }
+
+  }
+}

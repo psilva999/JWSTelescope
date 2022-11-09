@@ -53,6 +53,7 @@ function App() {
 
       <main>
         <About/>
+        {/* <Home/> */}
       </main>
       
       <button className='subscribe'>

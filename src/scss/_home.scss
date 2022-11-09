@@ -12,64 +12,6 @@ main {
     object-fit:cover;
   }
 
-  .presentation {
-    height:100vh;
-    width:100vw;
-    animation:show-container .6s linear forwards;
-    text-align:center;
-
-    article {
-      margin-top:4vh;
-      gap:1.7rem;
-      width:34rem;
-    }
-    
-    h1 {
-      font-weight:500;
-      font-size:3rem;
-      letter-spacing:.2rem;
-      line-height:3.8rem;
-      color:$normal-white;
-    }
-
-    span {
-      font-size:1.3rem;
-      width:28rem;
-      letter-spacing:.1rem;
-      font-weight:300;
-    }
-
-    button {
-      margin:-.2rem 0 0 -1rem;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      width:10rem;
-      padding:0rem 4rem 0rem 4rem;
-      flex-wrap:wrap;
-      overflow:hidden;
-      height:5rem;
-    
-      div {
-        background:$main-white;
-        width:1.8rem;
-        height:1.8rem;
-        -webkit-clip-path:$triangle;
-        clip-path:$triangle;
-
-        &:first-child {
-          animation:scroll-f-child 2.7s linear infinite;
-        }
-
-        &:last-child {
-          margin-top:-2.9rem;
-          animation:scroll-l-child 2.7s linear infinite;
-        }
-      }
-
-    }
-  }
-
   .intro {
     background:$normal-white;
     gap:2rem;
