@@ -1,9 +1,9 @@
 import React from 'react'
-import Building from '../../assets/imgs/7-historia/4.jpg'
+import Build from '../../assets/imgs/7-historia/4.jpg'
 
 const Building = () => {
   return (
-    <article> <h1>Planejamento e construção</h1>
+    <article  className='text-history'> <h1>Planejamento e construção</h1>
       <p>
         Engenheiros e astrônomos inovaram novas maneiras de atender às demandas científicas do telescópio Webb, bem como uma missão a uma distância inservível da Terra. Ao contrário do Hubble, os astronautas não poderão reparar e atualizar o telescópio.
       </p>
@@ -16,7 +16,7 @@ const Building = () => {
         Em 2011, todos os 18 segmentos de espelhos foram finalizados e comprovados por meio de testes para atender às especificações exigidas.
       </p>
 
-      <img src={ Building }/>
+      <img src={ Build }/>
 
       <p>
         Entre 2012 e 2013, as peças individuais de Webb, construídas em vários locais, começaram a chegar ao Goddard Space Flight Center da NASA em Greenbelt, Maryland.

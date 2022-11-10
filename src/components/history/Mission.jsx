@@ -2,7 +2,7 @@ import React from 'react'
 
 const Mission = () => {
   return (
-    <article> <h1>Objetivo da missão</h1>
+    <article className='text-history mission'> <h1>Objetivo da missão</h1>
 
       <ul>
         <li>

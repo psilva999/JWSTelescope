@@ -6,9 +6,8 @@ import Close from '../../assets/svg/3-login-share-newsletter/6-close.svg'
 const Infografico = () => {
   return (
     <>
-      <button>
+      <button className='infrografico'>
         <span>Infográfico</span>
-        <img src={ Arrow }/>
       </button>
 
       <div className='all-screen'>

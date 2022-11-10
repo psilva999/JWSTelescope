@@ -1,29 +1,29 @@
 import React from 'react'
 
-import Ideas from '../../assets/svg/6-summary/white/1.svg'
-import Build from '../../assets/svg/6-summary/white/2.svg'
+import { ReactComponent as Ideas } from '../../assets/svg/6-summary/white/1.svg'
+import { ReactComponent as Build } from '../../assets/svg/6-summary/white/2.svg'
 
-import Location from '../../assets/svg/6-summary/white/3.svg'
-import Mission from '../../assets/svg/6-summary/white/4.svg'
-import Launch from '../../assets/svg/6-summary/white/5.svg'
+import { ReactComponent as Location } from '../../assets/svg/6-summary/white/3.svg'
+import { ReactComponent as Mission } from '../../assets/svg/6-summary/white/4.svg'
+import { ReactComponent as Launch } from '../../assets/svg/6-summary/white/5.svg'
 
 const Summary = () => {
   return (
-    <ul>  <h1>Sumário</h1>
+    <ul className='summary'>  <h1>Sumário</h1>
 
-      <li> <img src={ Ideas }/>
+      <li> <Ideas/>
         <span>Primeiras ideias</span> </li>
 
-      <li> <img src={ Build }/>
+      <li> <Build/>
         <span>Planejamento e contrução</span> </li>
 
-      <li> <img src={ Location }/>
+      <li> <Location className='location-svg'/>
         <span>Localização</span> </li>
 
-      <li> <img src={ Mission }/>
+      <li> <Mission/>
         <span>Objetivo da missão</span> </li>
 
-      <li> <img src={ Launch }/>
+      <li> <Launch/>
         <span>Lançamento</span> </li>
     </ul>
 

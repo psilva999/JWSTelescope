@@ -3,7 +3,8 @@ import { Link } from 'react-scroll'
 
 import Header from './components/Header'
 // import Home from './components/Home'
-import About from './components/About'
+// import About from './components/About'
+import History from './components/History'
 // import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
@@ -52,8 +53,10 @@ function App() {
       <Header/>
 
       <main>
-        <About/>
         {/* <Home/> */}
+        {/* <About/> */}
+        <History/>
+        {/* <Newsletter/> */}
       </main>
       
       <button className='subscribe'>

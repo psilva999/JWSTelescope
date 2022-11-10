@@ -1,10 +1,10 @@
 import React from 'react'
-import Ideas from '../../assets/imgs/7-historia/3.jpg'
+import Ideass from '../../assets/imgs/7-historia/3.jpg'
 
 const Ideas = () => {
   return (
 
-    <article> <h1>Primeiras ideias</h1>
+    <article className='text-history'> <h1>Primeiras ideias</h1>
       <p>
         Três equipes compostas por cientistas e engenheiros dos setores público e privado se reuniram para determinar se a NASA poderia realizar a visão do comitê. Todos os três chegaram à conclusão de que o <a className='background-detail'> telescópio proposto funcionaria</a>. 
       </p>
@@ -13,7 +13,7 @@ const Ideas = () => {
         A NASA concordou em 1997 em financiar estudos adicionais para refinar os requisitos técnicos e financeiros para a construção do telescópio. Em 2002, a agência havia selecionado as equipes para construir os instrumentos e o grupo de astrônomos que forneceriam orientação na construção.
       </p>
 
-      <img src={ Ideas }/>
+      <img src={ Ideass }/>
 
       <p>
         Também em 2002, o telescópio foi formalmente chamado de Telescópio Espacial James Webb, em homenagem ao administrador da NASA que liderou o desenvolvimento do programa Apollo.

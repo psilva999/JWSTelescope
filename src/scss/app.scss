@@ -108,11 +108,12 @@ body {
 @import 'infos';
 @import 'header';
 
-@import './details/presentation';
 @import 'home';
 @import 'about';
+@import 'history';
 @import 'newsletter';
 
+@import './details/presentation';
 @import './details/input';
 @import './details/button';
 
