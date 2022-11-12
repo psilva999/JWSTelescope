@@ -56,6 +56,16 @@
   }
 }
 
+@keyframes show-summary {
+  from {
+    transform:translateX(1rem);
+  }
+
+  to {
+    transform:translateX(0rem);
+  }
+}
+
 @keyframes initial-deg {
   from {
     transform:rotate(180deg);

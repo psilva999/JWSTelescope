@@ -8,7 +8,7 @@ import History from './components/History'
 // import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
-import { changeImage, handleDropDownMenu, handleHeader, handleTop } from './components/Events/handleScroll'
+import { changeImage, handleDropDownMenu, handleHeader, handleSummary, handleTop } from './components/Events/handleScroll'
 import { faq } from './components/Events/handleClick'
 
 import Subscribe from './assets/svg/additional/2-email.svg'
@@ -35,6 +35,9 @@ function App() {
       container.classList.remove('active')
     }
   })
+
+  window.addEventListener('scroll', handleSummary)
+  window.addEventListener('load', handleSummary)
 
   window.addEventListener('load', handleHeader)
   window.addEventListener('load', changeImage)

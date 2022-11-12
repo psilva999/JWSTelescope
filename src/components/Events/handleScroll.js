@@ -110,3 +110,58 @@ export function handleDropDownMenu() {
     document.documentElement.style.setProperty('--top-dropdown', "6.7rem")
   }
 }
+
+export function handleSummary() {
+  const scrollSummary = document.querySelector('.summary-fixed'),
+        button = document.querySelectorAll('.summary-fixed svg'),
+
+        buttonLikeArray = [...button],
+        path = document.querySelectorAll('.summary-fixed path')
+
+  if (window.scrollY < 1350) {
+    scrollSummary.classList.remove('active')
+    removeActive()
+  }
+
+  else if (window.scrollY >= 1350) {
+    if (!scrollSummary.classList.contains("active")) 
+      scrollSummary.classList.add('active')
+
+    toggleFillYellow()
+  }
+
+  function toggleFillYellow() {
+    removeActive()
+
+    if (window.scrollY >= 1841 && window.scrollY < 3247 && !buttonLikeArray[0].classList.contains("active")) addActive(0)  
+
+    else if (window.scrollY >= 3247 && window.scrollY < 4736 && !buttonLikeArray[1].classList.contains("active")) addActive(1)
+
+    else if (window.scrollY >= 4736 && window.scrollY < 5951 && !buttonLikeArray[2].classList.contains("active")) addActive(2)  
+
+    else if (window.scrollY >= 5951 && window.scrollY < 6498 && !buttonLikeArray[3].classList.contains("active")) addActive(3)  
+
+    else if (window.scrollY >= 6498 && !buttonLikeArray[4].classList.contains("active")) addActive(4)
+  }
+
+  function removeActive() {
+    button.forEach(e => e.classList.remove("active"))
+    path.forEach(e => e.classList.remove("active"))
+  }
+
+  function addActive(e) {
+    buttonLikeArray[e].classList.add("active")
+    buttonLikeArray[e].firstChild.classList.add("active")
+  }
+}
+
+export function handleSummaryFixed(svg) {
+  const button = document.querySelectorAll('.summary-fixed svg'),
+        path = document.querySelectorAll('.summary-fixed path')
+
+  button.forEach(e => e.classList.remove("active"))
+  path.forEach(e => e.classList.remove("active"))
+
+  svg.target.classList.add("active")
+  svg.target.firstChild.classList.add("active")
+}

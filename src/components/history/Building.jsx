@@ -3,7 +3,7 @@ import Build from '../../assets/imgs/7-historia/4.jpg'
 
 const Building = () => {
   return (
-    <article  className='text-history'> <h1>Planejamento e construção</h1>
+    <article className='text-history' id='build'> <h1>Planejamento e construção</h1>
       <p>
         Engenheiros e astrônomos inovaram novas maneiras de atender às demandas científicas do telescópio Webb, bem como uma missão a uma distância inservível da Terra. Ao contrário do Hubble, os astronautas não poderão reparar e atualizar o telescópio.
       </p>
