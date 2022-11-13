@@ -6,7 +6,7 @@ const Start = () => {
 
     <article className='text-history'>
       <p>
-        O projeto, liderado pela Nasa, <a className='background-detail'> teve início em 1996</a>. Na época, chamava-se “Telescópio Espacial da Próxima Geração”, sem a homenagem a James Edwin Webb – administrador da agência espacial americana durante as missões Apollo.
+        O projeto, liderado pela Nasa, <a className='background-detail-history n-b-1'> teve início em 1996</a>. Na época, chamava-se “Telescópio Espacial da Próxima Geração”, sem a homenagem a James Edwin Webb – administrador da agência espacial americana durante as missões Apollo.
       </p>
 
       <img src={ Cartoon }/>

@@ -6,7 +6,7 @@ const Launch = () => {
 
     <article className='text-history' id='launch'> <h1>Lançamento</h1>
       <p>
-        Em 25 de dezembro de 2021, ele finalmente decolou a bordo de um foguete Ariane 5 da Agência Espacial Europeia (ESA) – lançado do <a className='background-detail'>Centro Espacial da Guiana Francesa</a>. 
+        Em 25 de dezembro de 2021, ele finalmente decolou a bordo de um foguete Ariane 5 da Agência Espacial Europeia (ESA) – lançado do <a className='background-detail-history n-b-5'>Centro Espacial da Guiana Francesa</a>. 
       </p>
 
       <img src={ Launchs }/>

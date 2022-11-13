@@ -6,7 +6,7 @@ const Ideas = () => {
 
     <article className='text-history' id='ideas'> <h1>Primeiras ideias</h1>
       <p>
-        Três equipes compostas por cientistas e engenheiros dos setores público e privado se reuniram para determinar se a NASA poderia realizar a visão do comitê. Todos os três chegaram à conclusão de que o <a className='background-detail'> telescópio proposto funcionaria</a>. 
+        Três equipes compostas por cientistas e engenheiros dos setores público e privado se reuniram para determinar se a NASA poderia realizar a visão do comitê. Todos os três chegaram à conclusão de que o <a className='background-detail-history n-b-2'> telescópio proposto funcionaria</a>. 
       </p>
 
       <p>

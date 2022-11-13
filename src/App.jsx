@@ -13,7 +13,7 @@ import { faq } from './components/Events/handleClick'
 
 import Subscribe from './assets/svg/additional/2-email.svg'
 import Arrow from './assets/svg/additional/3-back-top.svg'
-import { highLighter } from './components/Events/highlighter'
+import { highLighter, highLighterHistory } from './components/Events/highlighter'
 import { bitcoin, closeMenuFromOutside } from './components/Events/handleTags'
 import User from './components/Others/User'
 import { closeLoginFromOutside } from './components/Events/input'
@@ -38,6 +38,9 @@ function App() {
 
   window.addEventListener('scroll', handleSummary)
   window.addEventListener('load', handleSummary)
+
+  window.addEventListener('scroll', highLighterHistory)
+  window.addEventListener('load', highLighterHistory)
 
   window.addEventListener('load', handleHeader)
   window.addEventListener('load', changeImage)

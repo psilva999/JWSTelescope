@@ -5,7 +5,7 @@ const Location = () => {
   return (
     <article className='text-history' id='location'> <h1>Localização</h1>
       <p>
-        O JWST opera em uma órbita de halo, circulando em torno de um ponto no espaço conhecido como ponto Sol-Terra L2 Lagrange, <a className='background-detail'> aproximadamente 1 500 000 km além da órbita da Terra </a> ao redor do Sol. 
+        O JWST opera em uma órbita de halo, circulando em torno de um ponto no espaço conhecido como ponto Sol-Terra L2 Lagrange, <a className='background-detail-history n-b-4'> aproximadamente 1 500 000 km além da órbita da Terra </a> ao redor do Sol. 
       </p>
 
       <p>

@@ -9,7 +9,7 @@ const Building = () => {
       </p>
 
       <p>
-        <a className='background-detail'>A construção do Webb começou em 2004</a>. Em 2005, o porto espacial Center Spatial Guyanais (CSG) da Agência Espacial Européia na Guiana Francesa foi escolhido como local de lançamento e um foguete Ariane 5 como veículo de lançamento. 
+        <a className='background-detail-history n-b-3'>A construção do Webb começou em 2004</a>. Em 2005, o porto espacial Center Spatial Guyanais (CSG) da Agência Espacial Européia na Guiana Francesa foi escolhido como local de lançamento e um foguete Ariane 5 como veículo de lançamento. 
       </p>
 
       <p>
