@@ -133,15 +133,20 @@ export function handleSummary() {
   function toggleFillYellow() {
     removeActive()
 
-    if (window.scrollY >= 1841 && window.scrollY < 3247 && !buttonLikeArray[0].classList.contains("active")) addActive(0)  
+    if (window.scrollY >= 1891 && window.scrollY < 3297 && !buttonLikeArray[0].classList.contains("active"))
+      addActive(0)
 
-    else if (window.scrollY >= 3247 && window.scrollY < 4736 && !buttonLikeArray[1].classList.contains("active")) addActive(1)
+    else if (window.scrollY >= 3297 && window.scrollY < 4786 && !buttonLikeArray[1].classList.contains("active"))
+      addActive(1)
 
-    else if (window.scrollY >= 4736 && window.scrollY < 5951 && !buttonLikeArray[2].classList.contains("active")) addActive(2)  
+    else if (window.scrollY >= 4786 && window.scrollY < 6001 && !buttonLikeArray[2].classList.contains("active"))
+      addActive(2)
 
-    else if (window.scrollY >= 5951 && window.scrollY < 6498 && !buttonLikeArray[3].classList.contains("active")) addActive(3)  
+    else if (window.scrollY >= 6001 && window.scrollY < 6548 && !buttonLikeArray[3].classList.contains("active"))
+      addActive(3)
 
-    else if (window.scrollY >= 6498 && !buttonLikeArray[4].classList.contains("active")) addActive(4)
+    else if (window.scrollY >= 6548 && !buttonLikeArray[4].classList.contains("active"))
+      addActive(4)
   }
 
   function removeActive() {

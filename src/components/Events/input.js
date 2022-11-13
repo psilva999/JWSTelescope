@@ -86,3 +86,29 @@ export function handlePassword() {
 export function handleForm(e) {
   e.preventDefault()
 }
+
+export function handleInfografico(e) {
+  const infografico = document.querySelector(".all-screen")
+
+  if (!infografico.classList.contains("active")) {
+    infografico.classList.add("active")
+    infografico.style.animation = 'opacity-one .2s linear forwards'
+  }
+
+  else if (e.target.id === 'all-screen' || e.target.id === 'close-infos') {
+    infografico.style.animation = 'opacity-zero .1s linear forwards'
+
+    let tempo = 2,
+        containerInfografico = setInterval(countdown, 200)
+
+    function countdown() {
+      tempo--
+
+      if (tempo === 0) {
+        infografico.classList.remove('active')
+        clearInterval(containerInfografico)
+      }
+    }
+
+  }
+}

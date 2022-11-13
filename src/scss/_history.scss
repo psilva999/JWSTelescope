@@ -226,7 +226,7 @@
     }
   }
 
-  .infrografico {
+  .infografico {
     letter-spacing:.1rem;
     display:flex;
     margin-top:-1.5rem !important;
@@ -262,7 +262,58 @@
     display:none;
 
     &.active {
+      position:fixed;
+      top:0;
+      left:0;
       display:grid;
+      padding:2rem;
+      z-index:7;
+      place-items:center;
+      width:100vw;
+      height:100vh;
+      background:rgba(27, 28, 29, .5);
+      animation:opacity-one .2s linear forwards;
+    
+
+      article {
+        width:47rem;
+        padding:0 1rem;
+        height:35rem;
+        overflow-x:hidden;
+        overflow-y:auto;
+        scrollbar-width:thin;
+        scrollbar-color:#7c6a6a;
+        background:$normal-black;
+      
+        &::-webkit-scrollbar {
+          width:.43rem;
+        }
+      
+        &::-webkit-scrollbar-track {
+          background:$normal-black;
+        }
+      
+        &::-webkit-scrollbar-thumb {
+          background:$main-white;
+          background:$main-white;
+          border:.375rem solid $main-white;
+        }
+      }
+
+      img:first-child {
+        position:absolute;
+        top:1rem;
+        width:1.5rem;
+        height:1.5rem;
+        right:2rem;
+        background:$normal-blue;
+        cursor:pointer;
+      }
+
+      img:last-child {
+        width:100%;
+      }  
     }
+
   }
 }
