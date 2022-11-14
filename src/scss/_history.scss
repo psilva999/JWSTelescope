@@ -233,16 +233,9 @@
     gap:.3rem;
     margin-bottom:2rem !important;
     font-weight:400;
-    opacity:.8;
     font-size:1.1rem;
     align-items:center;
     margin:auto;
-    transition:.3s;
-
-    &:hover {
-      opacity:1;
-      transition:.3s;
-    }
 
     span {
       color:$normal-yellow;

@@ -9,12 +9,11 @@ import Product2 from '../../assets/imgs/6-store/2.jpg'
 import Product3 from '../../assets/imgs/6-store/3.jpg'
 
 import Product4 from '../../assets/imgs/6-store/4.jpg'
-import Product5 from '../../assets/imgs/6-store/5.jpg'
 
 const Marketing = () => {
   return (
     <>
-      <div>
+      <div className='lav first'>
         
         <span>
           <h1>Preço unico</h1>
@@ -27,15 +26,15 @@ const Marketing = () => {
         <img src={ Mars }/>
       </div>
 
-      <div>
+      <div className='lav last'>
+        <img src={ Sun }/>
+
         <span>
           <h1>Visualização</h1>
           <p>
             Em boas condições atmosféricas, ficará impressionado com imagens Lua, suas crateras e superfície, Júpiter com sua 4 maiores luas, Saturno com seus anéis e suas luas, inclusive Titan.
           </p>
         </span>
-
-        <img src={ Sun }/>
       </div>
 
       <ul>
@@ -43,10 +42,13 @@ const Marketing = () => {
         <li><img src={ Product2 }/> </li>
         <li><img src={ Product3 }/> </li>
         <li><img src={ Product4 }/> </li>
-        <li><img src={ Product5 }/> </li>
+        <li><img src={ Product1 }/> </li>
+        <li><img src={ Product2 }/> </li>
+        <li><img src={ Product3 }/> </li>
+        <li><img src={ Product4 }/> </li>
       </ul>
 
-      <button>ver mais</button>
+      <button className='ohh'>ver mais</button>
     </>
 
   )

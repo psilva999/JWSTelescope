@@ -7,14 +7,14 @@ const Content = () => {
   return (
 
     <>
-      <div>
+      <div className='content'>
 
         <p>
           <h1>Telescópio Refletor Newtoniano 114mm Skyline Deepsky</h1>
 
           <li>
-            <img src={ Stars }/>
-            <span>4.0 (3232 reviews)</span>
+            <img src={ Stars } className='stars'/>
+            <span className='reviews'>4.0 (3232 reviews)</span>
           </li>
 
           <li>
@@ -25,7 +25,7 @@ const Content = () => {
 
         <p>
           <h1>$450</h1>
-          <span>em 3x de $150 sem juros</span>
+          <span className='juros'>em 3x de $150 sem juros</span>
           <span>Ver os meios de pagamento</span>
         </p>
 
@@ -35,33 +35,30 @@ const Content = () => {
             <h2>Frete grátis</h2>
           </li>
 
-          <span>Saiba os prazos de entrega e as formas de envio.</span>
+          <li className='envio'>Saiba os prazos de entrega e as formas de envio.</li>
         </p>
 
         <p>
           <span>Cor: <strong>Azul Celeste</strong></span>
 
           <div>
-            <button></button>
-            <button></button>
+            <button className='active'></button>
             <button></button>
             <button></button>
           </div>
         </p>
 
-        <p> <span>Quantidade</span>
+        <p> <h2>Quantidade:</h2>
 
-          <div>
+          <div className='total'>
             <button>-</button>
             <li>1</li>
             <button>+</button>
           </div>
         </p>
 
-        <p>
-          <button>COMPRAR AGORA</button>
-          <button>Adicionar ao carrinho</button>
-        </p>
+        <button className='more'>COMPRAR AGORA</button>
+        <button className='more'>Adicionar ao carrinho</button>
       </div>
     </>
 
