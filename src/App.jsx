@@ -4,7 +4,11 @@ import { Link } from 'react-scroll'
 import Header from './components/Header'
 // import Home from './components/Home'
 // import About from './components/About'
+
 // import History from './components/History'
+// import Images from './components/Images'
+// import News from './components/News'
+
 import Store from './components/Store'
 // import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
@@ -62,7 +66,10 @@ function App() {
       <main>
         {/* <Home/> */}
         {/* <About/> */}
+        
         {/* <History/> */}
+        {/* <Images/> */}
+        {/* <News/> */}
 
         <Store/>
         {/* <Newsletter/> */}

@@ -19,8 +19,68 @@
 
     img {
       width:20rem;
+      cursor:pointer;
       height:25.2rem;
       border-radius:.2rem;
+    }
+  }
+
+  .all-screen-product {
+    display:none;
+
+    &.active {
+      display:grid;
+      place-items:center;
+      gap:.5rem;
+      z-index:7;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      background:rgba(27,28,29,.8);
+
+      .close {
+        position:absolute;
+        width:1.8rem;
+        cursor:pointer;
+        top:2rem;
+        z-index:8;
+        right:3rem;
+      }
+
+      button {
+        width:3rem;
+        height:3rem;
+
+        &:last-child:after, &:first-child:before {
+          position:absolute;
+          color:$main-white;
+          margin-left:-.8rem;
+          margin-top:-2.1rem;
+          font-size:3rem;
+        }
+
+        &:first-child:before {
+          content:'<';
+        }
+
+        &:last-child:after {
+          content:'>';
+        }
+      }
+
+      article {
+        img {
+          display:none;
+      
+          &.active {
+            display:block;
+            width:27rem;
+          }
+        }
+
+      }
     }
   }
 

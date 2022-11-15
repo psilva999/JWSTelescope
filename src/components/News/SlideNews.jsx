@@ -18,14 +18,14 @@ const SlideNews = () => {
           </a>
         </div>
 
-        <div> <img src={ Diferenca }/>
+        {/* <div> <img src={ Diferenca }/>
           <a href="https://socientifica.com.br/compare-a-incrivel-diferenca-das-imagens-dos-telescopios-hubble-e-james-webb/" target='_blank'>
             <h1>Compare a incrível diferença das imagens dos telescópios Hubble e James Webb</h1>
             <span>JWST - USA | 2022</span>
           </a>
-        </div>
+        </div> */}
 
-        <div> <img src={ Detalhes }/>
+        {/* <div> <img src={ Detalhes }/>
           <a href="https://socientifica.com.br/veja-a-imagem-mais-detalhada-do-universo-tirada-pelo-telescopio-james-webb/" target='_blank'>
             <h1>Veja a imagem mais detalhada do universo, tirada pelo Telescópio James Webb</h1>
             <span>JWST - USA | 2022</span>
@@ -44,7 +44,7 @@ const SlideNews = () => {
             <h1>O James Webb está transformando as astronomia</h1>
             <span>JWST - USA | 2022</span>
           </a>
-        </div>
+        </div> */}
       </ul>
 
       <div className='toggle-slide-news'>
