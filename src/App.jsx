@@ -6,10 +6,10 @@ import Header from './components/Header'
 // import About from './components/About'
 
 // import History from './components/History'
-// import Images from './components/Images'
+import Images from './components/Images'
 // import News from './components/News'
 
-import Store from './components/Store'
+// import Store from './components/Store'
 // import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
@@ -68,10 +68,10 @@ function App() {
         {/* <About/> */}
         
         {/* <History/> */}
-        {/* <Images/> */}
+        <Images/>
         {/* <News/> */}
 
-        <Store/>
+        {/* <Store/> */}
         {/* <Newsletter/> */}
       </main>
       
