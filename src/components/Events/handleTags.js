@@ -32,3 +32,21 @@ export function closeMenuFromOutside(e) {
     container.classList.remove('active')
   }
 }
+
+export function maxTotal() {
+  let li = document.querySelector('.total li'),
+      total = Number(li.textContent)
+
+  if (li.textContent === '3') li.textContent = 3
+
+  else li.textContent = total + 1
+}
+
+export function minTotal() {
+  let li = document.querySelector('.total li'),
+      total = Number(li.textContent)
+
+  if (li.textContent === '1') li.textContent = 1
+
+  else li.textContent = total - 1
+}

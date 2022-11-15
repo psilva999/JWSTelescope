@@ -1,4 +1,5 @@
 import React from 'react'
+import { maxTotal, minTotal } from '../Events/handleTags'
 
 import Stars from '../../assets/svg/5-store/0-avaliacao.svg'
 import Frete from '../../assets/svg/5-store/1-frete.svg'
@@ -51,9 +52,9 @@ const Content = () => {
         <p> <h2>Quantidade:</h2>
 
           <div className='total'>
-            <button>-</button>
-            <li>1</li>
-            <button>+</button>
+            <button onClick={ minTotal }>-</button>
+            <li className='min'>1</li>
+            <button onClick={ maxTotal}>+</button>
           </div>
         </p>
 
