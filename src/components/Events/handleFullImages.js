@@ -1,22 +1,36 @@
-export function handleAllScreenAlbum(e) {
-  const allScreenProduct = document.querySelector(".all-screen-product"),
-        allScreenImage = document.querySelectorAll('.all-screen-product article img'),
+export function openScreenAlbum(e) {
+  const arrayContainer = [...document.querySelectorAll('.container-images')],
+        arrayAlbum = [...document.querySelectorAll('.container-images img')],
 
-        arrayFullImages = [...allScreenImage],
-        arrayProduct = [...document.querySelectorAll('.product img')]
+        arrayFullScreenAlbum = [...document.querySelectorAll(".fullscreen-image")],
+        fullImages = document.querySelectorAll('.fullscreen-image article img'),
+        arrayFullAlbum = [...fullImages]
 
-  let arrayPosition = arrayProduct.indexOf(e.target)
+  let containerPosition = Number(arrayContainer.indexOf(e.target.parentNode)),
+      imgPosition = Number(arrayAlbum.indexOf(e.target))
 
-  if (!allScreenProduct.classList.contains("active")) {
-    allScreenImage.forEach(img => img.classList.remove("active"))
-    arrayFullImages[arrayPosition].classList.add('active')
+  if (!arrayFullScreenAlbum[containerPosition].classList.contains("active")) {
+    fullImages.forEach(img => img.classList.remove("active"))
 
-    allScreenProduct.classList.add("active")
-    allScreenProduct.style.animation = 'opacity-one .2s linear forwards'
+    if (containerPosition === 0) 
+      arrayFullAlbum[imgPosition].classList.add("active")
+
+    if (containerPosition === 1) 
+      arrayFullAlbum[imgPosition].classList.add("active")
+
+    if (containerPosition === 2) 
+      arrayFullAlbum[imgPosition].classList.add("active")
+
+    arrayFullScreenAlbum[containerPosition].classList.add("active")
+    arrayFullScreenAlbum[containerPosition].style.animation = 'opacity-one .2s linear forwards'
   }
+}
 
-  else if (e.target.id === 'all-screen-product' || e.target.id === 'close-product') {
-    allScreenProduct.style.animation = 'opacity-zero .1s linear forwards'
+export function closeScreenAlbum(e) {
+  const fullScreenAlbum = document.querySelector(".fullscreen-image.active")
+
+  if (e.target.id === 'fullscreen-image' || e.target.id === 'close') {
+    fullScreenAlbum.style.animation = 'opacity-zero .1s linear forwards'
 
     let tempo = 1,
         container = setInterval(countdown, 100)
@@ -25,44 +39,83 @@ export function handleAllScreenAlbum(e) {
       tempo--
 
       if (tempo === 0) {
-        allScreenProduct.classList.remove('active')
+        fullScreenAlbum.classList.remove("active")
         clearInterval(container)
       }
     }
-
   }
 }
 
 export function nextImageAlbum() {
-  const allScreenImage = document.querySelectorAll('.all-screen-product article img'),
-        arrayFullImages = [...allScreenImage],
-        activeImage = document.querySelector('.all-screen-product article img.active')
+  const arrayFullScreenAlbum = [...document.querySelectorAll(".fullscreen-image")],
+        fullImages = document.querySelectorAll('.fullscreen-image article img'),
 
-  let arrayPosition = Number(arrayFullImages.indexOf(activeImage)),
+        arrayFullAlbum = [...fullImages],
+        activeImage = document.querySelector('.fullscreen-image article img.active')
+
+  let arrayPosition = Number(arrayFullAlbum.indexOf(activeImage)),
       position = arrayPosition + 1
 
   activeImage.classList.remove('active')
-  
-  if (position === 4) 
-    arrayFullImages[0].classList.add('active')
 
-  else 
-    arrayFullImages[position].classList.add('active')
+  if (arrayFullScreenAlbum[0].classList.contains("active")) {
+    if (position === 4) 
+      arrayFullAlbum[0].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
+
+  if (arrayFullScreenAlbum[1].classList.contains("active")) {
+    if (position === 8) 
+      arrayFullAlbum[4].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
+
+  if (arrayFullScreenAlbum[2].classList.contains("active")) {
+    if (position === 12) 
+      arrayFullAlbum[8].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
 }
 
 export function prevImageAlbum() {
-  const allScreenImage = document.querySelectorAll('.all-screen-product article img'),
-        arrayFullImages = [...allScreenImage],
-        activeImage = document.querySelector('.all-screen-product article img.active')
+  const arrayFullScreenAlbum = [...document.querySelectorAll(".fullscreen-image")],
+        fullImages = document.querySelectorAll('.fullscreen-image article img'),
 
-  let arrayPosition = Number(arrayFullImages.indexOf(activeImage)),
+        arrayFullAlbum = [...fullImages],
+        activeImage = document.querySelector('.fullscreen-image article img.active')
+
+  let arrayPosition = Number(arrayFullAlbum.indexOf(activeImage)),
       position = arrayPosition - 1
 
   activeImage.classList.remove('active')
-  
-  if (position === -1) 
-    arrayFullImages[3].classList.add('active')
 
-  else 
-    arrayFullImages[position].classList.add('active')
+  if (arrayFullScreenAlbum[0].classList.contains("active")) {
+    if (position === -1) 
+      arrayFullAlbum[3].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
+
+  if (arrayFullScreenAlbum[1].classList.contains("active")) {
+    if (position === 3) 
+      arrayFullAlbum[7].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
+
+  if (arrayFullScreenAlbum[2].classList.contains("active")) {
+    if (position === 7) 
+      arrayFullAlbum[11].classList.add('active')
+
+    else 
+      arrayFullAlbum[position].classList.add('active')
+  }
 }

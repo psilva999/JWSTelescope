@@ -12,12 +12,12 @@ import Product4 from '../../assets/imgs/6-store/produto/4.jpg'
 const Product = () => {
   return (
     <>
-      <div className='product'>
-        <img src={ Product1 } onClick={ handleAllScreenProduct }/>
-        <img src={ Product2 } onClick={ handleAllScreenProduct }/>
+      <div className='product' onClick={ handleAllScreenProduct }>
+        <img src={ Product1 }/>
+        <img src={ Product2 }/>
 
-        <img src={ Product3 } onClick={ handleAllScreenProduct }/>
-        <img src={ Product4 } onClick={ handleAllScreenProduct }/>
+        <img src={ Product3 }/>
+        <img src={ Product4 }/>
       </div>
 
       <div className='all-screen-product' id='all-screen-product' onClick={ handleAllScreenProduct }>
