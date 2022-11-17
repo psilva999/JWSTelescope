@@ -1,7 +1,7 @@
 import React from 'react'
 
 import SlideNews from './News/SlideNews'
-// import Destaques from './News/Destaques'
+import Destaques from './News/Destaques'
 
 // import Podcasts from './News/Podcasts'
 // import Curiosidades from './News/Curiosidades'
@@ -14,13 +14,13 @@ const News = () => {
 
     <section className='news'>
       <SlideNews/>
-      {/* <Destaques/>
+      <Destaques/>
 
-      <Podcasts/>
-      <Curiosidades/>
+      {/* <Podcasts/> */}
+      {/* <Curiosidades/> */}
 
-      <Atlas/>
-      <LastestNews/> */}
+      {/* <Atlas/> */}
+      {/* <LastestNews/> */}
     </section>
 
   )

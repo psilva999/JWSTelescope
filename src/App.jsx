@@ -6,8 +6,8 @@ import Header from './components/Header'
 // import About from './components/About'
 
 // import History from './components/History'
-import Images from './components/Images'
-// import News from './components/News'
+// import Images from './components/Images'
+import News from './components/News'
 
 // import Store from './components/Store'
 // import Newsletter from './components/Newsletter'
@@ -68,8 +68,8 @@ function App() {
         {/* <About/> */}
         
         {/* <History/> */}
-        <Images/>
-        {/* <News/> */}
+        {/* <Images/> */}
+        <News/>
 
         {/* <Store/> */}
         {/* <Newsletter/> */}
