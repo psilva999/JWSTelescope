@@ -3,7 +3,7 @@
 
 .news {
   display:grid;
-  gap:3rem;
+  gap:6rem;
 
   .slide-news {
     margin-top:-8rem;
@@ -58,7 +58,7 @@
 
     .toggle-slide-news {
       margin:auto;
-      margin-top:33rem;
+      margin-top:36rem;
       display:block;
       position:absolute;
       display:flex;
@@ -87,5 +87,386 @@
     }
   }
 
+  .winged {
+    display:grid;
+    gap:2rem;
+    width:67.5rem;
+    margin:auto;
+    margin-bottom:1.5rem;
+
+    li {
+      list-style:none;
+    }
+
+    .save img {
+      width:1.3rem;
+      opacity:.8;
+      transition:.3s;
+
+      &:hover {
+        opacity:1;
+        transform:scale(1.1);
+        transition:.3s;
+      }
+    }
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+
+      h1 {
+        font-size:1.7rem;
+        font-weight:500;
+        letter-spacing:.1rem;
+        color:$normal-white;
+
+        &:before {
+          position:absolute;
+          content:'';
+          width:.2rem;
+          opacity:.8;
+          height:2rem;
+          margin-left:-.3rem;
+          margin-top:.3rem;
+          background:$normal-yellow;
+        }
+      }
+
+      button {
+        letter-spacing:.1rem;
+        font-weight:400;
+        font-size:.8rem;
+        color:$normal-yellow;
+
+        &:after {
+          content:'>';
+          position:relative;
+          top:.2rem;
+          font-size:1.1rem;
+          margin-left:.1rem;
+          color:$normal-yellow;
+          opacity:.8;
+        }
+      }
+    }
+
+    section {
+      padding:0;
+    }
+
+    a {
+      text-decoration:none;
+    }
+  }
+
+  .destaques {
+    section {
+      gap:1.25rem;
+    }
   
+    a {
+      padding:.5rem .5rem 1.25rem .5rem;
+      display:grid;
+      place-items:center;
+      gap:.7rem;
+      background:$normal-black;
+
+      &:hover {
+        img:first-child {
+          transform:scale(1.1);
+          transition:.5;
+        }
+      }
+    }
+
+    li {
+      overflow:hidden;
+
+      img {
+        transition:.5s;
+        object-fit:cover;
+      }
+    }
+
+    li, li img {
+      border-radius:.1rem;
+      width:32rem;
+      height:17rem;
+    }
+
+    div {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:100%;
+
+      h1 {
+        font-size:1rem;
+        width:21.3rem;
+        color:$normal-white;
+        font-weight:500;
+      }
+    }
+
+    span {
+      font-size:.8rem;
+      font-weight:300;
+      opacity:.6;
+      justify-self:left;
+      margin-top:-.4rem;
+    }
+  }
+
+  .podcast {
+    display:grid;
+    width:100vw;
+    gap:2rem;
+    background:$normal-black;
+    padding:1rem 0 2rem 0;
+    margin-bottom:1.5rem;
+
+    header {
+      display:flex;
+      width:67.5rem;
+      justify-content:space-between;
+      align-items:center;
+
+      h1 {
+        font-size:1.7rem;
+        font-weight:500;
+        letter-spacing:.1rem;
+        color:$normal-white;
+      }
+
+      span {
+        font-weight:300;
+      }
+    
+      button {
+        letter-spacing:.1rem;
+        font-weight:400;
+        font-size:.8rem;
+        color:$normal-yellow;
+    
+        &:after {
+          content:'>';
+          position:relative;
+          top:.2rem;
+          font-size:1.4rem;
+          margin-left:.1rem;
+          color:$normal-yellow;
+          opacity:.8;
+        }
+      }
+    }
+
+    div:last-child {
+      display:flex;
+      width:67.5rem;
+      justify-content:space-between;
+      flex-wrap:wrap;
+
+      a, a img {
+        width:16.3rem;
+        border-radius:.1rem;
+        object-fit:cover;
+        height:24rem;
+      }
+    }
+  }
+
+  .curiosidades {
+    section {
+      display:flex !important;
+      gap:1rem;
+    }
+
+    div {
+      background:$normal-black;
+      border-radius:.1rem;
+      gap:.5rem;
+      padding-right:.5rem;
+
+      &, a {
+        display:flex !important;
+        justify-content:center;
+        align-items:center;
+      }
+
+      p {
+        display:grid;
+        gap:.5rem;
+      }
+    }
+
+    .save {
+      margin-left:-.7rem;
+    }
+
+    span {
+      font-size:.8rem;
+      font-weight:300;
+      opacity:.6;
+      justify-self:left;
+      margin-top:-.4rem;
+    }
+
+    a:hover {
+      img:first-child {
+        transform:scale(1.1);
+        transition:.5;
+      }
+    }
+
+    li {
+      overflow:hidden;
+
+      img {
+        transition:.5s;
+        object-fit:cover;
+      }
+    }
+
+    a {
+      gap:1rem;
+
+      h1 {
+        font-size:1.2rem;
+        color:$normal-white;
+        font-weight:500;
+        width:17.5rem;
+        line-height:1.7rem;
+      }
+    }
+
+    li, li img {
+      border-radius:.1rem;
+      width:13rem;
+      object-fit:cover;
+      height:10rem;
+    }
+  }
+
+  .atlas {
+    display:grid;
+    gap:2rem;
+    margin-bottom:1.5rem;
+    place-items:center;
+
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:67.5rem;
+  
+      h1 {
+        font-size:1.7rem;
+        font-weight:500;
+        letter-spacing:.1rem;
+        color:$normal-white;
+  
+        &:before {
+          position:absolute;
+          content:'';
+          width:.2rem;
+          opacity:.8;
+          height:2rem;
+          margin-left:-.3rem;
+          margin-top:.3rem;
+          background:$normal-yellow;
+        }
+      }
+  
+      button {
+        letter-spacing:.1rem;
+        font-weight:400;
+        font-size:.8rem;
+        color:$normal-yellow;
+  
+        &:after {
+          content:'>';
+          position:relative;
+          top:.2rem;
+          font-size:1.1rem;
+          margin-left:.1rem;
+          color:$normal-yellow;
+          opacity:.8;
+        }
+      }
+    }
+
+    img {
+      width:85.375rem;
+      height:30rem;
+      object-fit:cover;
+    }
+  }
+
+  .lastest {
+    margin-bottom:3rem;
+
+    section {
+      display:grid;
+      gap:1.5rem;
+    }
+
+    div, div a {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    div {
+      background:$normal-black;
+      gap:1rem;
+      width:64rem;
+      border-radius:.2rem;
+      padding-right:3.5rem;
+    }
+
+    li {
+      border-radius:.2rem;
+      width:25rem;
+      height:13rem;
+      overflow:hidden;
+
+      img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        border-radius:.2rem;
+        transition:.5s;
+      }
+    }
+
+    a {
+      gap:1.25rem;
+
+      &:hover {
+        li img {
+          transform:scale(1.1);
+          transition:.5s;
+        }
+      }
+    }
+
+    h1 {
+      font-size:1.5rem;
+      font-weight:500;
+      color:$normal-white;
+      width:25rem;
+    }
+
+    p {
+      display:grid;
+      gap:.5rem;
+    }
+
+    span {
+      opacity:.6;
+    }
+
+
+  }
 }

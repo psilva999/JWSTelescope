@@ -7,7 +7,7 @@ import Header from './components/Header'
 
 // import History from './components/History'
 // import Images from './components/Images'
-import News from './components/News'
+// import News from './components/News'
 
 // import Store from './components/Store'
 // import Newsletter from './components/Newsletter'
@@ -69,7 +69,7 @@ function App() {
         
         {/* <History/> */}
         {/* <Images/> */}
-        <News/>
+        {/* <News/> */}
 
         {/* <Store/> */}
         {/* <Newsletter/> */}

@@ -3,11 +3,11 @@ import React from 'react'
 import SlideNews from './News/SlideNews'
 import Destaques from './News/Destaques'
 
-// import Podcasts from './News/Podcasts'
-// import Curiosidades from './News/Curiosidades'
+import Podcasts from './News/Podcasts'
+import Curiosidades from './News/Curiosidades'
 
-// import Atlas from './News/Atlas'
-// import LastestNews from './News/LastestNews'
+import Atlas from './News/Atlas'
+import LastestNews from './News/LastestNews'
 
 const News = () => {
   return (
@@ -16,11 +16,11 @@ const News = () => {
       <SlideNews/>
       <Destaques/>
 
-      {/* <Podcasts/> */}
-      {/* <Curiosidades/> */}
+      <Podcasts/>
+      <Curiosidades/>
 
-      {/* <Atlas/> */}
-      {/* <LastestNews/> */}
+      <Atlas/>
+      <LastestNews/>
     </section>
 
   )

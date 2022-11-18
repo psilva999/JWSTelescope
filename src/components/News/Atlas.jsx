@@ -4,7 +4,7 @@ import Universe from '../../assets/imgs/5-news/universe.jpg'
 
 const Atlas = () => {
   return (
-    <article>
+    <article className='atlas'>
       <header> <h1>Atlas do universo</h1>
         <button>Aprofunde-se no universo</button>
       </header>
