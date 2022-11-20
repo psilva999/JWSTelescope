@@ -42,6 +42,14 @@
     &:nth-child(2) {
       padding-bottom:.3rem;
 
+      &.truce.active img {
+        opacity:.3;
+      }
+
+      &.truce.active:hover ul {
+        display:none;
+      }
+
       &:hover ul {
         display:grid;
         animation:from-the-south .3s linear forwards;
@@ -118,9 +126,8 @@
     }
 
     img {
-      margin:.1rem auto auto .1rem;
+      margin:.1rem auto auto -5.9rem;
       width:1.1rem;
-      margin-left:-0rem;
     }
   }
 
@@ -157,6 +164,8 @@
     div {
       gap:1rem;
       width:max-content;
+      position:relative;
+      left:.7rem;
 
       button {
         &:first-child {

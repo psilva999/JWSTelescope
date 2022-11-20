@@ -43,15 +43,11 @@
       animation:border-green .3s linear forwards;
     }
 
-    &#password:valid {
-      border:.1rem solid $sombra;
-    }
-
     &.error {
       border:.1rem solid $error;
     }
 
-    &.error:focus ~ label {
+    &.error ~ label {
       animation:border-red .3s linear forwards;
     }
 

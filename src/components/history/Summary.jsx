@@ -3,12 +3,12 @@ import { Link } from 'react-scroll'
 
 import { handleSummaryFixed } from '../Events/handleScroll'
 
-import { ReactComponent as Ideas } from '../../assets/svg/6-summary/white/1.svg'
-import { ReactComponent as Build } from '../../assets/svg/6-summary/white/2.svg'
+import { ReactComponent as Ideas } from '../../assets/svg/6-summary/1.svg'
+import { ReactComponent as Build } from '../../assets/svg/6-summary/2.svg'
 
-import { ReactComponent as Location } from '../../assets/svg/6-summary/white/3.svg'
-import { ReactComponent as Mission } from '../../assets/svg/6-summary/white/4.svg'
-import { ReactComponent as Launch } from '../../assets/svg/6-summary/white/5.svg'
+import { ReactComponent as Location } from '../../assets/svg/6-summary/3.svg'
+import { ReactComponent as Mission } from '../../assets/svg/6-summary/4.svg'
+import { ReactComponent as Launch } from '../../assets/svg/6-summary/5.svg'
 
 const Summary = () => {
   return (

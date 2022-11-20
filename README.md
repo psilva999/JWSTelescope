@@ -10,3 +10,4 @@ import svgr from '@svgr/rollup';
 export default defineConfig({
   plugins: [react(), svgr()]
 }) -->
+__npm i react-router-dom__

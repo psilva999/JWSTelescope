@@ -42,7 +42,7 @@ export function handleHeader() {
       header.classList.add("journey")
 
       header.style.animation = 'small-header .1s linear forwards'
-      logo.style.animation = 'small-logo .3s linear forwards'
+      logo.style.animation = 'small-logo .2s linear forwards'
 
       function hideMenu() {
         tempo--
@@ -81,7 +81,7 @@ export function handleHeader() {
     li.classList.remove("hide")
 
     header.style.animation = 'large-header .1s linear forwards'
-    logo.style.animation = 'large-logo .2s linear forwards'
+    logo.style.animation = 'large-logo .1s linear forwards'
   }
 }
 

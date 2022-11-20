@@ -17,7 +17,7 @@ const Team = () => {
             to='what'
             spy={ true }
             smooth={ true }
-            offset={ -70 }
+            offset={ 0 }
             duration={ 600 }
             className='link-scroll'>
               <button>

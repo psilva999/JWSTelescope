@@ -1,4 +1,1 @@
-<svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="8.7998" y="11" width="11" height="2.2" transform="rotate(-90 8.7998 11)" fill="#FDA916" fill-opacity="0.3"/>
-<rect y="8.64287" width="8.8" height="2.35714" fill="#FDA916" fill-opacity="0.3"/>
-</svg>
+<svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#FDA916" fill-opacity=".3" d="M8.8 11V0H11v11zM0 8.643h8.8V11H0z"/></svg>

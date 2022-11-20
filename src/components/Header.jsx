@@ -1,10 +1,14 @@
 import React from 'react'
-import Infos from './Others/Infos'
+import { Link } from 'react-scroll'
+import { NavLink } from "react-router-dom";
 
+import Infos from './Others/Infos'
 import Logo from '../assets/svg/1-header/3-logo.svg'
 import Dropdown from '../assets/svg/1-header/4-dropdown.svg'
+
 import { handleHeader, noAnimation } from './Events/handleScroll'
 import { handleLoginSign } from './Events/input'
+import { handleLiHistory, handleMenuLiActive, removeActive } from './Events/handleMenu';
 
 const Header = () => {
   return (
@@ -13,7 +17,16 @@ const Header = () => {
 
       <header className='header-fixo' onClick={ noAnimation } onMouseMove={ noAnimation } onMouseOut={ handleHeader }>
         <div>
-          <img src={ Logo } className='logo'/>
+          <Link activeClass="active"
+            to='top'
+            spy={ false }
+            smooth={ false }
+            offset={ 0 }
+            duration={ 0 }
+            className='link-scroll'>
+            <NavLink  className='no-style home' to='/'>
+            <img src={ Logo } className='logo' onClick={ removeActive }/> </NavLink>  
+          </Link>
 
           <button className='toggle-menu'>
             <div></div>
@@ -23,11 +36,32 @@ const Header = () => {
 
           <nav className='menu'>
             <ul>
-              <li>sobre</li>
+              <Link activeClass="active"
+                to='top'
+                spy={ false }
+                smooth={ false }
+                offset={ 0 }
+                duration={ 0 }
+                className='link-scroll'>
+                <NavLink  className='no-style' to='/about'>
+                  <li onClick={ handleMenuLiActive } className='fire'>sobre</li>
+                </NavLink>
+              </Link>
 
-              <li>
-                <span>história</span>
-                <img src={ Dropdown }/>
+              <li className='truce'>
+                <Link activeClass="active"
+                  to='top'
+                  spy={ false }
+                  smooth={ false }
+                  offset={ 0 }
+                  duration={ 0 }
+                  className='link-scroll'
+                  onClick ={ handleLiHistory }>
+                  <NavLink  className='no-style history' to='/history'>
+                    <span>história</span>
+                    <img src={ Dropdown }/>
+                  </NavLink>
+                </Link>
 
                 <ul>
                   <li>Início do projeto</li>
@@ -39,9 +73,41 @@ const Header = () => {
                 </ul>
               </li>
 
-              <li>imagens</li>
-              <li>news</li>
-              <li>store</li>
+              <Link activeClass="active"
+                to='top'
+                spy={ false }
+                smooth={ false }
+                offset={ 0 }
+                duration={ 0 }
+                className='link-scroll'>
+                  <NavLink className='no-style' to='/images'>
+                    <li onClick={ handleMenuLiActive } className='fire'>imagens</li>
+                  </NavLink>
+              </Link>
+
+              <Link activeClass="active"
+                to='top'
+                spy={ false }
+                smooth={ false }
+                offset={ 0 }
+                duration={ 0 }
+                className='link-scroll'>
+                <NavLink className='no-style' to='/news'>
+                  <li onClick={ handleMenuLiActive } className='fire'>news</li>
+                </NavLink>
+              </Link>
+
+              <Link activeClass="active"
+                to='top'
+                spy={ false }
+                smooth={ false }
+                offset={ 0 }
+                duration={ 0 }
+                className='link-scroll'>
+                <NavLink className='no-style' to='/store'>
+                  <li onClick={ handleMenuLiActive } className='fire'>store</li>
+                </NavLink>
+              </Link>
             </ul>
 
             <div>

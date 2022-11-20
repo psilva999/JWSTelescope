@@ -84,7 +84,10 @@
 
     span {
       font-size:.9rem;
-      color:$normal-yellow;
+      background:$history-span;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      opacity:.8;
       font-weight:600;
       margin-bottom:-.5rem;
       margin-left:-.4rem;
@@ -299,7 +302,6 @@
         width:1.5rem;
         height:1.5rem;
         right:2rem;
-        background:$normal-blue;
         cursor:pointer;
       }
 
