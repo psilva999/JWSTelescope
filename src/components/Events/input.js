@@ -242,6 +242,137 @@ export function loginUser() {
     user.disabled = true
     password.disabled = true
   }
+}
 
-  console.log("berlim")
+export function emailRegex() {
+  const email = document.querySelector('#email'),
+        conti = document.querySelector('.signup .more'),
+        regex = /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i
+
+  if (email.value.match(regex) && !email.classList.contains('valid')) {
+
+    email.classList.remove('error') 
+    email.classList.add('valid')
+    conti.disabled = false
+  }
+
+  else if (regex.test(email.value) === false) {
+    email.classList.remove('valid')
+    conti.disabled = true
+
+    if (!email.classList.contains('error'))
+      email.classList.add('error')
+  }
+}
+
+export function continueSign() {
+  const email = document.querySelector('#email'),
+        sign = document.querySelector('.signup .more')
+
+  if (email.classList.contains('valid')) {
+    sign.innerHTML = 'DONE'
+    document.querySelector('.signup label').style.display = 'none'
+
+    sign.disabled = true
+    email.disabled = true
+  }
+}
+
+export function handleName() {
+  const name = document.querySelector('#name')
+
+  if (name.value.length >= 1 && !name.classList.contains('valid')) {
+    name.classList.remove('error')
+    name.classList.add('valid')
+  }
+
+  else if (name.value.length <= 0 && !name.classList.contains('error')) {
+    name.classList.add('error')
+    name.classList.remove('valid')
+  }
+
+  newsletterController()
+}
+
+export function handleLastName() {
+  const lastName = document.querySelector('#lastName')
+
+  if (lastName.value.length >= 1 && !lastName.classList.contains('valid')) {
+    lastName.classList.remove('error')
+    lastName.classList.add('valid')
+  }
+
+  else if (lastName.value.length <= 0 && !lastName.classList.contains('error')) {
+    lastName.classList.add('error')
+    lastName.classList.remove('valid')
+  }
+
+  newsletterController()
+}
+
+export function emailNewsletter() {
+  const email = document.querySelector('#nEmail'),
+        regex = /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i
+
+  if (email.value.match(regex) && !email.classList.contains('valid')) {
+
+    email.classList.remove('error') 
+    email.classList.add('valid')
+  }
+
+  else if (regex.test(email.value) === false) {
+    email.classList.remove('valid')
+
+    if (!email.classList.contains('error'))
+      email.classList.add('error')
+  }
+
+  newsletterController()
+}
+
+export function newsletterController() {
+  const name = document.querySelector('#name'),
+        lastname = document.querySelector('#lastName'),
+
+        nEmail = document.querySelector('#nEmail'),
+        subscribe = document.querySelector('form .more'),
+
+        checked1 = document.querySelector('#check-one'),
+        checked2 = document.querySelector('#check-two')
+
+  if (name.classList.contains('valid') && lastname.classList.contains('valid') && nEmail.classList.contains('valid') && checked1.checked && checked2.checked)
+    subscribe.disabled = false
+  
+  else 
+    subscribe.disabled = true
+}
+
+export function sendNews() {
+  const name = document.querySelector('#name'),
+        lastname = document.querySelector('#lastName'),
+        label = document.querySelectorAll('.large-style label'),
+
+        nEmail = document.querySelector('#nEmail'),
+        subscribe = document.querySelector('form .more'),
+
+        checked1 = document.querySelector('#check-one'),
+        checked2 = document.querySelector('#check-two')
+
+  if (name.classList.contains('valid') && lastname.classList.contains('valid') && nEmail.classList.contains('valid') && checked1.checked && checked2.checked) {
+    name.disabled = true
+    lastname.disabled = true
+    nEmail.disabled = true
+
+    checked1.disabled = true
+    checked2.disabled = true
+    subscribe.disabled = true
+
+    label.forEach(e => e.style.display = 'none')
+    name.style.opacity = '.6'
+
+    lastname.style.opacity = '.6'
+    nEmail.style.opacity = '.6'
+    document.querySelector('.checkbox').style.opacity = '.6'
+    subscribe.style.opacity = '.6'
+  }
 }

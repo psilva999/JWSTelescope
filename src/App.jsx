@@ -21,7 +21,6 @@ import Subscribe from './assets/svg/additional/2-email.svg'
 import Arrow from './assets/svg/additional/3-back-top.svg'
 
 import { changeImage, handleDropDownMenu, handleHeader, handleSummary, handleTop } from './components/Events/handleScroll'
-import { faq } from './components/Events/handleClick'
 
 import { highLighter, highLighterHistory } from './components/Events/highlighter'
 import { bitcoin, closeMenuFromOutside } from './components/Events/handleTags'
@@ -38,7 +37,6 @@ function App() {
   window.addEventListener('scroll', highLighter)
 
   window.addEventListener("scroll", handleDropDownMenu)
-  window.addEventListener('scroll', faq)
   window.addEventListener("scroll", () => {
     const container = document.querySelector('.infos-languages ul')
 
@@ -59,7 +57,6 @@ function App() {
   window.addEventListener('load', highLighter)
 
   window.addEventListener('load', handleTop)
-  window.addEventListener('load', faq)
   // window.addEventListener('load', () => {
   //   window.location.href = 'https://psilva999.github.io/jws-telescope-beta/'
   // })

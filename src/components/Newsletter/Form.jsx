@@ -1,5 +1,5 @@
 import React from 'react'
-import { handleForm } from '../Events/input'
+import { handleForm, handleLastName, handleName, emailNewsletter, newsletterController, sendNews } from '../Events/input'
 
 const Form = () => {
   return (
@@ -8,18 +8,18 @@ const Form = () => {
       <div>
 
         <p className='large-style'>
-          <input type="text" id='name' name='name'/>
+          <input type="text" id='name' name='name' onInput={ handleName }/>
           <label htmlFor="name">Name</label>
         </p>
 
         <p className='large-style'>
-          <input type="text" id='lastName' name='lastName'/>
+          <input type="text" id='lastName' name='lastName' onInput={ handleLastName }/>
           <label htmlFor="lastName">Lastname</label>
         </p>
       </div>
 
       <p className='large-style'>
-        <input type="email" id='nEmail' name='nEmail'/>
+        <input type="email" id='nEmail' name='nEmail' onInput={ emailNewsletter }/>
         <label htmlFor="nEmail">E-mail</label>
       </p>
 
@@ -27,18 +27,19 @@ const Form = () => {
 
       <div className='checkbox'>
         <p>
-          <input type="checkbox" name='1Check' id='1Check'/>
-          <label htmlFor="1Check">Add me to the web.dev mailing list.</label>
+          <input type="checkbox" name='check-one' id='check-one' onChange={ newsletterController }/>
+          <label htmlFor="check-one">Add me to the web.dev mailing list.</label>
         </p>
 
         <p>
-          <input type="checkbox" name='2Check' id='2Check'/>
-          <label htmlFor="2Check">I accept Google's <a>Terms and Conditions</a></label>
+          <input type="checkbox" name='check-two' id='check-two' onChange={ newsletterController }/>
+          <label htmlFor="check-two">I accept Google's <a>Terms and Conditions</a></label>
         </p>
       </div>
 
-      <button className='more'>SUBSCRIBE</button>
+      <i onClick={ sendNews }><button className='more' disabled>SUBSCRIBE</button></i>
     </form>
+    
   )
 }
 

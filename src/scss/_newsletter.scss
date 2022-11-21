@@ -63,7 +63,7 @@
         background:none;
         border:.1rem solid $sombra;
         border-radius:.1rem;
-        padding:.8rem .5rem .6rem .5rem;
+        padding:.8rem .5rem .5rem .5rem;
 
         &:focus {
           outline:none;
@@ -81,7 +81,7 @@
           border:.1rem solid $error;
         }
 
-        &.valid:valid ~ label, &:focus ~ label {
+        &:focus ~ label {
           animation:show-large-animation .3s linear forwards;
         }
 
@@ -89,7 +89,7 @@
           animation:border-green-large .3s linear forwards;
         }
 
-        &.error:focus ~ label {
+        &.error ~ label {
           animation:border-red-large .3s linear forwards;
         }
       }
@@ -152,8 +152,11 @@
       }
     }
 
-    .more {
+    i {
       margin:auto;
+    }
+
+    .more {
       width:8.3rem;
       margin-top:2rem;
       transition:.3s;
@@ -163,6 +166,17 @@
         border:.07rem solid $normal-gray;
         color:$normal-white;
         transition:.3s;
+      }
+
+      &:disabled {
+        opacity:.6;
+        cursor:auto;
+
+        &:hover {
+          background:$main-white;
+          border:.07rem solid $main-white;
+          color:$main-black;
+        }
       }
 
     }

@@ -5,6 +5,8 @@ export function handleMenuLiActive(e) {
 }
 
 export function handleLiHistory() {
+  window.scrollTo(0,0)
+  console.log(window.scrollY)
   removeActive()
   const truce = document.querySelector('.truce').classList.add("active")
 

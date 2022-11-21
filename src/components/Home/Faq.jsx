@@ -6,13 +6,15 @@ import Medidas from '../../assets/imgs/1-home/4-faq-1.jpg'
 import Location from '../../assets/imgs/1-home/5-faq-2.jpg'
 import Launch from '../../assets/imgs/1-home/6-faq-3.jpg'
 
+import { faq } from '../Events/handleClick'
+
 const Faq = () => {
   return (
     <section className='faq'>
       <h1>Perguntas frequentes</h1>
 
       <dl>
-        <dt className='medidas active'>
+        <dt className='medidas active' onClick={ faq }>
           <h2>Quais são as medidas do JWST?</h2>
           <img src={ Faqs }/>
         </dt>
@@ -23,7 +25,7 @@ const Faq = () => {
           <img src={ Medidas }/>
         </dd>
 
-        <dt id='margin' className='location'>
+        <dt id='margin' className='location' onClick={ faq }>
           <h2>Em que ponto do espaço o telescópio está localizado?</h2>
           <img src={ Faqs }/>
         </dt>
@@ -34,7 +36,7 @@ const Faq = () => {
           <img src={ Location }/>
         </dd>
 
-        <dt id='margin' className='launch'>
+        <dt id='margin' className='launch' onClick={ faq }>
           <h2>Quando foi lançado?</h2>
           <img src={ Faqs }/>
         </dt>

@@ -2,7 +2,7 @@ import React from 'react'
 
 import Google from '../../assets/svg/3-login-share-newsletter/3-google.svg'
 
-import { login } from '../Events/input'
+import { continueSign, emailRegex, login } from '../Events/input'
 
 const Sign = () => {
 
@@ -25,11 +25,11 @@ const Sign = () => {
 
       <article>
         <p className='input-style'>
-          <input type='email' required/>
-          <label htmlFor="">E-mail</label>
+          <input type='email' id='email' name='email' onInput={ emailRegex } required/>
+          <label htmlFor="email">E-mail</label>
         </p>
 
-        <button className='more' disabled>CONTINUE</button>
+        <i onClick={ continueSign }><button className='more' disabled>CONTINUE</button></i>
       </article>
 
       <article>
