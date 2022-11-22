@@ -37,7 +37,9 @@ const Form = () => {
         </p>
       </div>
 
-      <i onClick={ sendNews }><button className='more' disabled>SUBSCRIBE</button></i>
+      <i onClick={ sendNews }><button className='more' disabled>SUBSCRIBE</button>
+      </i>
+      <section className='confetti-container'></section>
     </form>
     
   )

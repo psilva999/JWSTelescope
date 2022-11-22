@@ -4,6 +4,21 @@
   display:grid;
   place-items:top center;
 
+  .confetti-container {
+    display:none;
+
+    &.active {
+      display:block;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100vw;
+      z-index:13;
+      margin-top:16vh !important;
+      cursor:none;
+    }
+  }
+
   header {
     display:grid;
     place-items:center;

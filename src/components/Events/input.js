@@ -1,3 +1,5 @@
+import { confetti } from "./confetti"
+
 export function login() {
   const login = document.querySelector(".singup-login.active .login"),
         sign = document.querySelector(".signup")
@@ -356,9 +358,13 @@ export function sendNews() {
         subscribe = document.querySelector('form .more'),
 
         checked1 = document.querySelector('#check-one'),
-        checked2 = document.querySelector('#check-two')
+        checked2 = document.querySelector('#check-two'),
+        confettiAllPage = document.querySelector('.confetti-container')
 
   if (name.classList.contains('valid') && lastname.classList.contains('valid') && nEmail.classList.contains('valid') && checked1.checked && checked2.checked) {
+    let tempo = 10,
+        confettiContainer = setInterval(countDown, 1000)
+
     name.disabled = true
     lastname.disabled = true
     nEmail.disabled = true
@@ -374,5 +380,19 @@ export function sendNews() {
     nEmail.style.opacity = '.6'
     document.querySelector('.checkbox').style.opacity = '.6'
     subscribe.style.opacity = '.6'
+    
+    confetti()
+    function countDown() {
+      tempo--
+
+      if (tempo === 2)
+        confettiAllPage.style.animation = 'opacity-zero 2s linear forwards'
+
+      if (tempo === 0) {
+        clearInterval(confettiContainer)
+        confettiAllPage.classList.remove('active')
+      }
+    }
+
   }
 }
